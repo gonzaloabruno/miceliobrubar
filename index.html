@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Micelio Brubar · Insumos para cultivar hongos</title>
+<meta name="description" content="Micelio, kits de autocultivo, jeringas, placas y sustratos para cultivar hongos. Laboratorio en Ciudadela, Buenos Aires. Envíos a todo el país.">
+<meta name="theme-color" content="#F7F3EA">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Micelio Brubar · Insumos para cultivar hongos">
+<meta property="og:description" content="Micelio, kits de autocultivo, jeringas, placas y sustratos para cultivar hongos. Laboratorio en Ciudadela, Buenos Aires. Envíos a todo el país.">
+<meta property="og:locale" content="es_AR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none' stroke='%235E6B3A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='40' height='40' rx='9' fill='%23EFE8D8' stroke='none'/%3E%3Cpath d='M7 19a13 13 0 0 1 26 0z'/%3E%3Cpath d='M16 19v8a4 4 0 0 0 8 0v-8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<style id="app-style">
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Young+Serif&display=swap');
+/* Layout: tienda de laboratorio. Columna de 1120px, encabezado fijo, fichas tipo etiqueta de muestra. Siempre en crema, como el feed; el verde queda solo en títulos y botones. */
+:root{
+  --bg:#F7F3EA; --surface:#FCFAF4; --surface-2:#EFE8D8; --heading:#2F3B22; --text:#5A4632; --muted:#76674F;
+  --line:#DED4BE; --accent:#5E6B3A; --btn-bg:#2F3B22; --btn-fg:#F4EEE0;
+  --band-bg:#E8DEC8; --band-fg:#2F3B22; --band-muted:#6E5F48;
+  --ok:#4C6A2A; --warn:#8F611A; --danger:#9B3B2A; --scrim:rgba(30,26,18,.38);
+  --f-display:'Young Serif', Georgia, 'Times New Roman', serif;
+  --f-body:'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --r-sm:6px; --r-md:10px; --r-lg:14px;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;color:var(--heading);text-wrap:balance;margin:0;line-height:1.12}
+h1{font-size:clamp(34px,5.2vw,54px);letter-spacing:-.01em}
+h2{font-size:clamp(26px,3.2vw,34px)}
+h3{font-size:20px}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono,.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:18px;max-width:58ch}
+.muted{color:var(--muted)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--btn-bg);color:var(--btn-fg);padding:8px 12px;z-index:100;border-radius:6px}
+.skip:focus{left:16px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--btn-bg);color:var(--btn-fg);border:1px solid var(--btn-bg);border-radius:999px;padding:12px 22px;font:600 15px/1.2 var(--f-body);text-decoration:none;cursor:pointer;transition:transform .15s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.1)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--heading);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);filter:none}
+.btn.small{padding:8px 14px;font-size:14px}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.link{color:var(--heading);font-weight:600;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.link:hover{text-decoration-color:var(--accent)}
+.icon-btn{background:none;border:1px solid var(--line);color:var(--heading);border-radius:999px;width:34px;height:34px;display:inline-grid;place-items:center;cursor:pointer;font:600 16px var(--f-body)}
+.icon-btn:hover{border-color:var(--accent)}
+.icon-btn svg{width:16px;height:16px}
+
+/* Cabecera */
+.announce{background:var(--band-bg);color:var(--band-fg);font-size:13px}
+.announce .wrap{padding-block:7px;text-align:center}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:24px;min-height:66px;position:relative}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--heading)}
+.brand svg{width:34px;height:34px;color:var(--accent)}
+.brand span{font-family:var(--f-display);font-size:21px;white-space:nowrap}
+.main-nav{display:flex;gap:4px;margin-left:auto}
+.main-nav a{text-decoration:none;font-size:15px;font-weight:500;padding:8px 12px;border-radius:999px;color:var(--text)}
+.main-nav a:hover{color:var(--heading);background:var(--surface-2)}
+.main-nav a.active{color:var(--heading);background:var(--surface-2)}
+.header-actions{display:flex;align-items:center;gap:8px}
+.cart-btn{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 8px 7px 14px;color:var(--heading);font:600 14px var(--f-body);cursor:pointer}
+.cart-btn:hover{border-color:var(--accent)}
+.cart-btn svg{width:18px;height:18px}
+.cart-btn b{min-width:24px;height:24px;border-radius:999px;background:var(--btn-bg);color:var(--btn-fg);display:inline-grid;place-items:center;font-size:12px;padding-inline:6px;font-variant-numeric:tabular-nums}
+.admin-pill{font:600 13px var(--f-body);color:var(--heading);text-decoration:none;border:1px dashed var(--accent);border-radius:999px;padding:7px 12px;white-space:nowrap}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--heading);font:600 14px var(--f-body);cursor:pointer}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .main-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:2px;background:var(--bg);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px));margin:0}
+  .main-nav.open{display:flex}
+  .main-nav a{padding:12px 14px;font-size:16px}
+  .header-actions{margin-left:auto}
+}
+@media (max-width:520px){ .cart-btn .cart-label{display:none} .brand span{font-size:18px} .admin-pill{display:none} }
+
+/* Secciones */
+main{display:block;min-height:60vh}
+main:focus{outline:none}
+.section{padding-block:56px}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.section-head p{max-width:52ch}
+.stack{display:flex;flex-direction:column;gap:12px}
+
+/* Inicio */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:56px 40px}
+.hero-copy{display:flex;flex-direction:column;gap:20px;min-width:0}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.hero-facts{list-style:none;margin:12px 0 0;padding:16px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 32px;font-size:14px}
+.hero-facts b{display:block;font-family:var(--f-display);font-weight:400;font-size:22px;color:var(--heading)}
+.spec{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:24px;position:relative;margin:0;min-width:0}
+.spec::before{content:"";position:absolute;left:24px;right:24px;top:0;height:6px;background:radial-gradient(circle at 5px 0,var(--bg) 3px,transparent 3.5px) 0 0/14px 6px repeat-x}
+.spec-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.spec h2{font-size:28px;margin-top:14px}
+.spec h2 i{font-style:italic}
+.spec .sub{color:var(--muted);font-size:14px;margin-top:4px}
+.stages{list-style:none;margin:18px 0 0;padding:0}
+.stages li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding-block:11px;border-top:1px dashed var(--line)}
+.stages .n{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.stages b{display:block;color:var(--heading);font-weight:600;font-size:15px}
+.stages small{display:block;color:var(--muted);font-size:13px}
+.stages .v{font-family:var(--f-mono);font-size:13px;color:var(--heading);white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:860px){ .hero{grid-template-columns:1fr;gap:32px;padding-block:36px 24px} }
+
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.path{display:flex;flex-direction:column;gap:12px;padding:30px;border-radius:var(--r-lg);text-decoration:none;min-height:230px;transition:transform .2s ease}
+.path:hover{transform:translateY(-2px)}
+.path p{max-width:44ch}
+.path .go{margin-top:auto;font-weight:600}
+.path-home{background:var(--surface-2);color:var(--text)}
+.path-pro{background:var(--band-bg);color:var(--band-fg)}
+.path-pro h2{color:var(--band-fg)}
+.path-pro .mono{color:var(--band-muted)}
+.path svg{width:44px;height:44px}
+.path-home svg{color:var(--accent)}
+.path-pro svg{color:var(--band-muted)}
+@media (max-width:720px){ .paths{grid-template-columns:1fr} }
+
+.strain-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 28px}
+.strain-list li{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding-block:13px;border-top:1px solid var(--line)}
+.strain-list b{color:var(--heading);font-weight:600}
+.strain-list i{color:var(--muted);font-size:14px;text-align:right}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:step}
+.steps li{padding:20px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);display:flex;flex-direction:column;gap:8px}
+.steps b{color:var(--heading);font-size:17px;font-family:var(--f-display);font-weight:400}
+.steps p{font-size:14px;color:var(--muted)}
+@media (max-width:900px){ .steps{grid-template-columns:1fr 1fr} }
+@media (max-width:520px){ .steps{grid-template-columns:1fr} }
+
+.band{background:var(--band-bg);color:var(--band-fg);border-radius:var(--r-lg);padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.band h2{color:var(--band-fg)}
+.band p{color:var(--band-muted)}
+.band .btn{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.pay{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:16px}
+.pay-amount{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px dashed var(--line)}
+.pay-amount b{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,5vw,40px);color:var(--heading);font-variant-numeric:tabular-nums}
+.pay dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 20px;align-items:center}
+.pay dt{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.pay dd{margin:0;color:var(--heading);display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
+.pay .alias{font:500 20px var(--f-mono);letter-spacing:.02em;word-break:break-all}
+.step-title{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-size:22px;color:var(--heading)}
+.step-title span{width:30px;height:30px;border-radius:50%;border:1px solid var(--accent);display:inline-grid;place-items:center;font:500 14px var(--f-mono);color:var(--accent);flex:none}
+.result details summary{cursor:pointer;color:var(--heading);font-weight:600;font-size:15px}
+.result details pre{margin-top:10px}
+@media (max-width:760px){ .band{grid-template-columns:1fr;padding:26px} }
+
+/* Productos */
+.page-head{padding-block:40px 8px;display:flex;flex-direction:column;gap:12px}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;padding-block:20px 8px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;max-width:100%}
+.tab{flex:none;text-decoration:none;font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--text);background:var(--surface);white-space:nowrap;cursor:pointer;font-family:var(--f-body)}
+.tab:hover{border-color:var(--accent)}
+.tab.active{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.tab small{opacity:.7;margin-left:4px;font-variant-numeric:tabular-nums}
+.search{position:relative;flex:1 1 240px;max-width:320px}
+.search input[type=text]{width:100%;padding:10px 14px 10px 38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:15px var(--f-body)}
+.search svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--muted)}
+.cat-intro{padding:18px 0 4px;color:var(--muted);max-width:60ch}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s ease,transform .2s ease}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;flex:1}
+.media{aspect-ratio:4/3;max-width:100%;background:var(--surface-2);display:grid;place-items:center;color:var(--accent);overflow:hidden}
+.media svg{width:36%;height:auto}
+.media img{width:100%;height:100%;object-fit:contain;display:block}
+.media img.fill,.thumb img.fill{object-fit:cover}
+.card-body{padding:16px 16px 0;display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.card-body h3{font-size:19px}
+.card-body p{font-size:14px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.price{font-family:var(--f-display);font-size:21px;color:var(--heading);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price small{font-family:var(--f-body);font-size:13px;color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;padding:3px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.badge.ok{color:var(--ok)}
+.badge.warn{color:var(--warn)}
+.badge.info{color:var(--muted)}
+.card .btn{width:100%}
+.empty{padding:48px 20px;text-align:center;border:1px dashed var(--line);border-radius:var(--r-md);color:var(--muted);display:flex;flex-direction:column;gap:12px;align-items:center}
+
+/* Ficha de producto */
+.crumbs{font-size:14px;color:var(--muted);padding-top:28px;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{color:var(--muted)}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding-block:20px 56px;align-items:start}
+.detail .media{aspect-ratio:1/1;border-radius:var(--r-lg);border:1px solid var(--line)}
+.detail .media svg{width:42%}
+.detail-info{display:flex;flex-direction:column;gap:18px;min-width:0}
+.detail-info h1{font-size:clamp(30px,4vw,42px)}
+.detail-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.detail-price .price{font-size:32px}
+.tier{font-size:14px;color:var(--ok);font-weight:500}
+.desc{font-size:16px;max-width:60ch}
+fieldset{border:none;margin:0;padding:0;min-width:0}
+legend{font-weight:600;color:var(--heading);margin-bottom:10px;padding:0;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px;background:var(--surface);color:var(--text)}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip:hover{border-color:var(--accent)}
+.chip:has(input:checked){background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.chip:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.chip .dot{width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.chip .dot.later{background:var(--warn)}
+.buy-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.qty button{background:none;border:none;width:40px;height:44px;font:600 18px var(--f-body);color:var(--heading);cursor:pointer}
+.qty input{width:44px;text-align:center;border:none;background:transparent;font:600 16px var(--f-body);color:var(--heading);-moz-appearance:textfield;appearance:textfield}
+.qty input::-webkit-inner-spin-button,.qty input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.qty.sm button{width:30px;height:32px;font-size:15px}
+.qty.sm input{width:30px;font-size:14px}
+.specs{display:grid;grid-template-columns:auto 1fr;margin:0;border-bottom:1px solid var(--line)}
+.specs dt,.specs dd{padding-block:11px;border-top:1px solid var(--line);margin:0}
+.specs dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-right:20px;padding-top:13px}
+.specs dd{color:var(--heading)}
+.note{font-size:14px;color:var(--muted);padding:12px 14px;background:var(--surface-2);border-radius:var(--r-sm)}
+@media (max-width:820px){ .detail{grid-template-columns:1fr;gap:24px} .detail .media{aspect-ratio:4/3} }
+
+/* Páginas de texto */
+.prose{max-width:68ch;display:flex;flex-direction:column;gap:16px;font-size:17px}
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+@media (max-width:820px){ .two{grid-template-columns:1fr;gap:28px} }
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.values div{padding:22px;border-top:2px solid var(--accent);background:var(--surface);border-radius:0 0 var(--r-md) var(--r-md);display:flex;flex-direction:column;gap:8px}
+.values b{font-family:var(--f-display);font-weight:400;color:var(--heading);font-size:19px}
+.values p{font-size:15px;color:var(--muted)}
+@media (max-width:760px){ .values{grid-template-columns:1fr} }
+.lab-card{background:var(--surface-2);border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;gap:14px}
+.lab-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.lab-card dt{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:2px}
+.lab-card dd{margin:0;color:var(--heading)}
+.ship-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.ship-list li{border:1px solid var(--line);border-radius:var(--r-md);padding:20px;background:var(--surface);display:flex;flex-direction:column;gap:6px}
+.ship-list b{color:var(--heading)}
+.ship-list span{font-size:14px;color:var(--muted)}
+.faq{display:flex;flex-direction:column;max-width:780px}
+.faq details{border-top:1px solid var(--line);padding-block:4px}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 36px 16px 0;position:relative;font-weight:600;color:var(--heading);font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font:400 24px var(--f-body);color:var(--accent)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 18px;max-width:64ch}
+
+/* Carrito */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:70}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--line);z-index:80;display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top,0px)) calc(20px + env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) 20px;box-shadow:-20px 0 40px rgba(0,0,0,.08)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.drawer-head h2{font-size:26px}
+.drawer-body{flex:1;overflow-y:auto;display:flex;flex-direction:column;min-height:0}
+.lines{list-style:none;margin:0;padding:0}
+.line{display:grid;grid-template-columns:56px 1fr auto;gap:12px;padding-block:14px;border-bottom:1px solid var(--line);align-items:start}
+.thumb{width:56px;height:56px;border-radius:var(--r-sm);background:var(--surface-2);display:grid;place-items:center;color:var(--accent);overflow:hidden}
+.thumb svg{width:60%}
+.thumb img{width:100%;height:100%;object-fit:contain}
+.line-info{min-width:0;display:flex;flex-direction:column;gap:6px}
+.line-info b{color:var(--heading);font-weight:600;font-size:15px;line-height:1.3}
+.line-info small{color:var(--muted);font-size:13px}
+.line-price{text-align:right;display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-variant-numeric:tabular-nums;color:var(--heading);font-weight:600}
+.rm{background:none;border:none;color:var(--muted);font:13px var(--f-body);text-decoration:underline;cursor:pointer;padding:0}
+.rm:hover{color:var(--danger)}
+.totals{display:flex;flex-direction:column;gap:8px;padding-top:16px}
+.totals div{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums}
+.totals .grand{font-family:var(--f-display);font-size:22px;color:var(--heading)}
+.drawer-foot{display:flex;flex-direction:column;gap:12px;padding-top:16px}
+
+/* Checkout */
+.co-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:start;padding-block:24px 64px}
+.co-form{display:flex;flex-direction:column;gap:28px;min-width:0}
+.ship-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ship-opt{position:relative;display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:var(--r-md);padding:14px 14px 14px 40px;cursor:pointer;background:var(--surface)}
+.ship-opt input{position:absolute;left:14px;top:17px;accent-color:var(--accent)}
+.ship-opt b{color:var(--heading);font-size:15px}
+.ship-opt span{font-size:13px;color:var(--muted)}
+.ship-opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:14px;font-weight:600;color:var(--heading)}
+.field .hint{font-size:12px;color:var(--muted);font-weight:400}
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],textarea,select{width:100%;font:16px var(--f-body);padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--text)}
+textarea{resize:vertical;min-height:84px}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:0;border-color:transparent}
+.field.err input,.field.err textarea{border-color:var(--danger)}
+.field .msg{font-size:13px;color:var(--danger)}
+.summary{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:20px;position:sticky;top:calc(84px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:8px;min-width:0}
+.summary h2{font-size:22px}
+.summary .line{grid-template-columns:44px 1fr auto}
+.summary .thumb{width:44px;height:44px}
+.result{display:flex;flex-direction:column;gap:16px;max-width:720px;padding-block:24px 64px}
+.result pre{white-space:pre-wrap;word-break:break-word;font:13px/1.6 var(--f-mono);background:var(--surface-2);color:var(--heading);padding:18px;border-radius:var(--r-md);max-height:340px;overflow:auto;margin:0}
+.result .row{display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width:860px){ .co-grid{grid-template-columns:1fr} .summary{position:static;order:-1} }
+@media (max-width:520px){ .ship-opts,.fields{grid-template-columns:1fr} }
+
+/* Pie */
+.site-footer{border-top:1px solid var(--line);margin-top:24px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;padding-block:44px calc(80px + env(safe-area-inset-bottom,0px));font-size:15px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.foot a{text-decoration:none;color:var(--text)}
+.foot a:hover{color:var(--heading);text-decoration:underline}
+.foot h3{font-size:16px;font-family:var(--f-body);font-weight:600;margin-bottom:12px}
+.foot p{color:var(--muted);max-width:36ch}
+@media (max-width:720px){ .foot{grid-template-columns:1fr;gap:24px} }
+
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;align-items:center;gap:8px;background:var(--band-bg);color:var(--band-fg);border:1px solid var(--line);text-decoration:none;font:600 14px var(--f-body);padding:12px 16px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.wa-float svg{width:18px;height:18px}
+.toast{position:fixed;left:50%;bottom:calc(76px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);background:var(--btn-bg);color:var(--btn-fg);padding:12px 18px;border-radius:999px;font-size:14px;font-weight:500;z-index:90;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.draft-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;background:var(--surface);border:1px dashed var(--accent);color:var(--heading);border-radius:999px;padding:6px 6px 6px 16px;display:flex;gap:12px;align-items:center;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-width:calc(100% - 32px)}
+
+/* Administración */
+.admin-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;padding-block:36px 16px;border-bottom:1px solid var(--line)}
+.admin-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.status{font-size:14px;color:var(--muted)}
+.status.dirty{color:var(--warn);font-weight:600}
+.adm-tabs{display:flex;gap:8px;padding-block:18px;flex-wrap:wrap}
+.adm-list{display:flex;flex-direction:column;gap:10px;padding-bottom:48px}
+.adm-item{border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface)}
+.adm-item.off{opacity:.72}
+.adm-row{display:grid;grid-template-columns:52px minmax(0,1fr) 130px 190px auto auto;gap:12px;align-items:center;padding:10px 12px}
+.adm-row .thumb{width:52px;height:52px}
+.adm-row input[type=text],.adm-row input[type=number],.adm-row select{padding:8px 10px;font-size:15px}
+.adm-name small{display:block;font-size:12px;color:var(--muted);margin-top:4px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.05em}
+.check{display:inline-flex;align-items:center;gap:6px;font-size:14px;cursor:pointer;white-space:nowrap}
+.check input{accent-color:var(--accent);width:16px;height:16px}
+.adm-detail{border-top:1px dashed var(--line);padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.adm-detail .full{grid-column:1/-1}
+.adm-detail .checks{display:flex;flex-wrap:wrap;gap:10px 18px}
+.adm-photo{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.adm-photo .thumb{width:84px;height:84px}
+.file-btn{position:relative;overflow:hidden}
+.file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.danger{color:var(--danger);border-color:var(--danger)}
+.adm-foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.adm-card{border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
+@media (max-width:860px){
+  .adm-row{grid-template-columns:52px minmax(0,1fr) auto;grid-template-areas:"t n e" "p p p" "a a a" "v v v"}
+  .adm-row>.thumb{grid-area:t}.adm-row>.adm-name{grid-area:n}.adm-row>.adm-price{grid-area:p}.adm-row>.adm-avail{grid-area:a}.adm-row>.check{grid-area:v}.adm-row>.adm-edit{grid-area:e}
+  .adm-detail,.adm-card{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+<template id="shell">
+<a class="skip" href="#view">Saltar al contenido</a>
+<div class="announce" id="announce"><div class="wrap" id="announce-text"></div></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#inicio" aria-label="Micelio Brubar, inicio">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19a14 14 0 0 1 28 0z"/><path d="M14 13.5c1-1.5 2.5-2.5 4-3"/><path d="M16 19v9a4 4 0 0 0 8 0v-9"/><path d="M20 32v3M20 35l-6 3M20 35l6 3M14 38h-4M26 38h4"/></svg>
+      <span>Micelio Brubar</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
+      <a href="#inicio" data-nav="inicio">Inicio</a>
+      <a href="#productos" data-nav="productos">Productos</a>
+      <a href="#nosotros" data-nav="nosotros">Quiénes somos</a>
+      <a href="#como-comprar" data-nav="como-comprar">Envíos y pagos</a>
+      <a href="#preguntas" data-nav="preguntas">Preguntas</a>
+    </nav>
+    <div class="header-actions">
+      <a class="admin-pill" id="admin-pill" href="#admin" hidden>Administrar</a>
+      <button class="cart-btn" id="cart-open" type="button" aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-label">Carrito</span><b id="cart-count">0</b>
+      </button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    </div>
+  </div>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div class="stack">
+      <a class="brand" href="#inicio"><span>Micelio Brubar</span></a>
+      <p>Micelio, kits y sustratos para cultivar hongos. Laboratorio en Ciudadela, Buenos Aires. Envíos a todo el país.</p>
+    </div>
+    <div>
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#cat-en-casa">Cultivo en casa</a></li>
+        <li><a href="#cat-micelio">Micelio y genética</a></li>
+        <li><a href="#cat-sustratos">Sustratos y frascos</a></li>
+        <li><a href="#cat-productores">Productores</a></li>
+        <li><a href="#cat-asesorias">Asesorías</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <ul id="foot-contact"></ul>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" id="wa-float" href="https://wa.me/" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.8A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
+  Consultanos
+</a>
+<div class="draft-bar" id="draft-bar" hidden><span>Tenés cambios sin publicar</span><a class="btn small" href="#admin">Ir a publicar</a></div>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Carrito" hidden>
+  <div class="drawer-head"><h2>Tu carrito</h2><button class="icon-btn" id="cart-close" type="button" aria-label="Cerrar carrito">✕</button></div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</template>
+<div id="root"></div>
+
+<script type="application/json" id="catalog-data">{"settings":{"whatsapp":"5491150119652","instagram":"miceliobrubar","alias":"miceliobrubar","titular":"Gonzalo Agustín Bruno","banco":"Mercado Pago","mercadolibre":"","announcement":"Envíos a todo el país · Retiro en Ciudadela hasta las 14 h"},
+"strains":[
+{"id":"girgola-gris","name":"Gírgola gris","latin":"Pleurotus ostreatus"},
+{"id":"melena","name":"Melena de león","latin":"Hericium erinaceus"},
+{"id":"girgola-rosada","name":"Gírgola rosada","latin":"Pleurotus djamor"},
+{"id":"black-pearl","name":"Black pearl","latin":"Pleurotus híbrido"},
+{"id":"enoki","name":"Enoki","latin":"Flammulina velutipes"},
+{"id":"reishi","name":"Reishi","latin":"Ganoderma lucidum"},
+{"id":"shiitake","name":"Shiitake","latin":"Lentinula edodes"}],
+"categories":[
+{"id":"en-casa","name":"Cultivo en casa","blurb":"Kits, bloques y un manual para tu primera cosecha. Pensado para aprender y probar."},
+{"id":"micelio","name":"Micelio y genética","blurb":"Jeringas de micelio líquido, placas de Petri y micelio en grano, producidos en nuestro laboratorio."},
+{"id":"sustratos","name":"Sustratos y frascos","blurb":"Pellet de álamo y frascos de vidrio con puerto de inyección y filtro de aire."},
+{"id":"productores","name":"Productores","blurb":"Bloques y micelio por volumen, con una cantidad fija por semana o por mes."},
+{"id":"asesorias","name":"Asesorías","blurb":"Consultas y planificación de producción con un ingeniero agrónomo."}],
+"products":[
+{"id":"kit","cat":"en-casa","name":"Kit de autocultivo","short":"Todo para cultivar en casa, desde inocular el grano hasta cosechar.","desc":"Incluye una jeringa de micelio líquido, grano estéril, pellets para el sustrato y el instructivo paso a paso. Hacés todo el proceso: inoculás el grano, lo pasás al bloque y cosechás.","price":25000,"priceNote":"2 por $45.000","tiers":[{"min":2,"price":22500}],"availability":"stock","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"stockStrains":[],"specs":[["Rinde","≈ 500 g en dos oleadas"],["Incluye","Jeringa, grano estéril, pellets e instructivo"],["Incubación","20–23 °C, oscuridad total"],["Fructificación","10–18 °C, luz indirecta"]],"icon":"kit","visible":true,"featured":true},
+{"id":"bloque-2kg","cat":"en-casa","name":"Bloque listo para fructificar · 2 kg","short":"Bloque colonizado: lo abrís, lo rociás y cosechás.","desc":"Para vivir la cosecha sin hacer todo el proceso. Gírgola gris con entrega inmediata; las demás cepas se preparan a pedido.","price":20000,"availability":"stock","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"stockStrains":["girgola-gris"],"specs":[["Peso","2 kg"],["Fructificación","10–18 °C, luz indirecta"],["Humedad","Rociar 4 veces por día"]],"icon":"bloque","visible":true,"featured":true},
+{"id":"manual","cat":"en-casa","name":"Manual básico de cultivo de gírgola gris","short":"PDF para aprender a cultivar y planificar una producción comercial.","desc":"Pago único. Te enseña a cultivar gírgola gris paso a paso y a planificar una producción para vender. Te llega por mail.","price":25000,"availability":"digital","strains":[],"specs":[["Formato","PDF"],["Entrega","Por mail"],["Nivel","Desde cero hasta producción comercial"]],"icon":"libro","visible":true,"featured":false},
+{"id":"jeringa","cat":"micelio","name":"Jeringa de micelio líquido","short":"Cultivo líquido listo para inocular frascos de grano.","desc":"Micelio líquido de nuestra propia genética, listo para inyectar en frascos de grano esterilizado.","price":10000,"availability":"stock","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"stockStrains":[],"specs":[["Contenido","10 cc"],["Uso","Inocular grano estéril"]],"icon":"jeringa","visible":true,"featured":true},
+{"id":"placa","cat":"micelio","name":"Placa de Petri con micelio","short":"Genética en placa para expandir a grano o preparar líquido.","desc":"Placa con micelio de la cepa que elijas. Se prepara a pedido.","price":20000,"availability":"pedido","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"specs":[["Uso","Expansión a grano o a líquido"],["Elaboración","A pedido"]],"icon":"placa","visible":true,"featured":false},
+{"id":"grano","cat":"micelio","name":"Micelio en grano · 3 kg","short":"Semilla para inocular sustrato. $5.000 el kilo.","desc":"Gírgola gris con entrega inmediata. El resto de las cepas se prepara a pedido.","price":15000,"priceNote":"$5.000 por kg","availability":"stock","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"stockStrains":["girgola-gris"],"specs":[["Peso","3 kg"],["Precio por kg","$5.000"],["Dosis sugerida","3–5 % del peso del sustrato"]],"icon":"grano","visible":true,"featured":true},
+{"id":"pellets","cat":"sustratos","name":"Pellet de álamo · 20 kg","short":"Sustrato para gírgola y otras especies de madera.","desc":"Bolsa de 20 kg de pellet de álamo para preparar el sustrato de tus bloques.","price":40000,"availability":"stock","strains":[],"specs":[["Peso","20 kg"],["Madera","Álamo"]],"icon":"pellet","visible":true,"featured":false},
+{"id":"frasco-avena","cat":"sustratos","name":"Frasco con avena esterilizada","short":"Con puerto de inyección y filtro de aire. Inyectás y listo.","desc":"Frasco de vidrio con avena ya esterilizada, puerto de inyección y filtro de aire. Le inyectás la jeringa y empieza a colonizar.","price":12000,"availability":"stock","strains":[],"specs":[["Contenido","Avena esterilizada"],["Tapa","Puerto de inyección y filtro de aire"]],"icon":"frasco","visible":true,"featured":false},
+{"id":"frascos-6","cat":"sustratos","name":"Pack de 6 frascos con puerto y filtro","short":"Frascos vacíos para preparar tu propio grano.","desc":"Seis frascos de vidrio con puerto de inyección y filtro de aire, sin avena.","price":32000,"availability":"stock","strains":[],"specs":[["Unidades","6"],["Contenido","Vacíos, sin avena"]],"icon":"frascos","visible":true,"featured":false},
+{"id":"bloque-4kg","cat":"productores","name":"Bloque listo para cosechar · 4 kg","short":"Para productores con una cantidad fija por semana.","desc":"Bloques de 4 kg para tu producción. Se elaboran a pedido y la entrega se confirma con vos.","price":8000,"priceFrom":true,"availability":"consulta","strains":["girgola-gris","melena"],"specs":[["Peso","4 kg"],["Gírgola gris","$8.000 por bloque"],["Melena de león","$10.000 por bloque"],["Condición","Cantidad fija semanal"]],"icon":"volumen","visible":true,"featured":false},
+{"id":"grano-volumen","cat":"productores","name":"Micelio en grano por volumen","short":"Precio especial con pedido fijo por semana o por mes.","desc":"Contanos cuántos kilos necesitás y cada cuánto, y te pasamos el precio por volumen.","price":null,"availability":"consulta","strains":["girgola-gris","melena","girgola-rosada","black-pearl","enoki","reishi","shiitake"],"specs":[["Presentación","Bolsas de 3 kg"],["Condición","Pedido fijo"]],"icon":"grano","visible":true,"featured":false},
+{"id":"asesoria-1h","cat":"asesorias","name":"Consulta de 1 hora","short":"Una llamada para resolver las dudas de tu cultivo.","desc":"Contaminaciones, rendimiento, sustratos o el armado de tu espacio. Coordinamos día y horario.","price":50000,"availability":"consulta","strains":[],"specs":[["Duración","1 hora"],["Modalidad","Llamada o videollamada"]],"icon":"charla","visible":true,"featured":false},
+{"id":"planificacion","cat":"asesorias","name":"Planificación de producción","short":"Trabajo puntual para armar o mejorar tu producción.","desc":"Espacio, insumos, calendario de producción y costos, adaptado a lo que querés producir.","price":200000,"availability":"consulta","strains":[],"specs":[["Modalidad","Trabajo puntual"]],"icon":"plan","visible":true,"featured":false},
+{"id":"frasco-arroz","cat":"sustratos","name":"Frasco de arroz integral esterilizado","short":"Con puerto de inyección y filtro de aire.","desc":"Frasco de vidrio con arroz integral esterilizado, puerto de inyección y filtro de aire.","price":null,"availability":"stock","strains":[],"specs":[],"icon":"frasco","visible":false,"featured":false},
+{"id":"fibra-coco","cat":"sustratos","name":"Fibra de coco","short":"Sustrato para mezclas y capas de cobertura.","desc":"Fibra de coco para preparar sustratos.","price":null,"availability":"stock","strains":[],"specs":[],"icon":"hoja","visible":false,"featured":false}
+]}</script>
+
+<script id="app-js">
+(function () {
+  'use strict';
+
+  /* ---------- Datos ---------- */
+  var SOURCE = document.getElementById('catalog-data').textContent;
+  var published = JSON.parse(SOURCE);
+  var cat = JSON.parse(SOURCE);
+  var root = document.getElementById('root');
+  root.appendChild(document.getElementById('shell').content.cloneNode(true));
+
+  var $ = function (s, el) { return (el || document).querySelector(s); };
+  var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
+  var nf = new Intl.NumberFormat('es-AR');
+  function money(n) { return '$' + nf.format(Math.round(n)); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+
+  var view = $('#view');
+  var state = { search: '', openEditor: null, adminTab: 'productos', isAdmin: false, capsReady: false, result: null };
+
+  function strain(id) { return cat.strains.find(function (s) { return s.id === id; }); }
+  function strainName(id) { var s = strain(id); return s ? s.name : id; }
+  function product(id) { return cat.products.find(function (p) { return p.id === id; }); }
+  function category(id) { return cat.categories.find(function (c) { return c.id === id; }); }
+  function visible() { return cat.products.filter(function (p) { return p.visible !== false; }); }
+  function canBuy(p) { return p.price != null && p.price !== '' && p.availability !== 'consulta'; }
+
+  /* ---------- Íconos ---------- */
+  function svg(d) { return '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>'; }
+  var ICONS = {
+    kit: svg('<path d="M10 26h44v28H10z"/><path d="M7 18h50v8H7z"/><path d="M32 18v36"/><path d="M32 18c-3-5-9-9-12-6s2 6 12 6c10 0 15-3 12-6s-9 1-12 6"/>'),
+    bloque: svg('<path d="M18 16h24v40H18z"/><path d="M18 16l4-7h16l4 7"/><path d="M42 28c3-4 10-4 13 0-4 2-9 2-13 0z"/><path d="M42 38c3-4 10-4 13 0-4 2-9 2-13 0z"/><path d="M42 48c3-3 8-3 10 0-3 2-7 2-10 0z"/>'),
+    libro: svg('<path d="M10 14h17a5 5 0 0 1 5 5v35a4 4 0 0 0-4-4H10z"/><path d="M54 14H37a5 5 0 0 0-5 5v35a4 4 0 0 1 4-4h18z"/><path d="M16 24h10M16 31h10M38 24h10M38 31h10"/>'),
+    jeringa: svg('<g transform="rotate(40 32 32)"><rect x="26" y="14" width="12" height="28" rx="2"/><path d="M32 42v14M22 14h20M32 14V6M27 6h10M26 22h5M26 28h5M26 34h5"/></g>'),
+    placa: svg('<ellipse cx="32" cy="30" rx="24" ry="9"/><path d="M8 30v7c0 5 11 9 24 9s24-4 24-9v-7"/><path d="M20 29c3-3 6 2 9-1s6-4 9-1 5 2 7 0"/>'),
+    grano: svg('<path d="M18 18h28v38H18z"/><path d="M23 10h18v8H23z"/><circle cx="26" cy="30" r="1.6"/><circle cx="34" cy="28" r="1.6"/><circle cx="40" cy="34" r="1.6"/><circle cx="29" cy="38" r="1.6"/><circle cx="37" cy="44" r="1.6"/><circle cx="25" cy="47" r="1.6"/>'),
+    pellet: svg('<path d="M14 18c0-4 6-6 18-6s18 2 18 6v34c0 3-6 5-18 5s-18-2-18-5z"/><path d="M14 18c5 3 31 3 36 0"/><path d="M23 34h5M33 31h6M28 42h6M38 44h4M22 46h4"/>'),
+    frasco: svg('<path d="M20 22h24v30a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z"/><path d="M18 14h28v8H18z"/><circle cx="27" cy="18" r="1.6"/><path d="M35 16h5v4h-5z"/><path d="M20 38c6 2 18 2 24 0"/>'),
+    frascos: svg('<path d="M8 26h18v26a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z"/><path d="M7 20h20v6H7z"/><path d="M38 26h18v26a3 3 0 0 1-3 3H41a3 3 0 0 1-3-3z"/><path d="M37 20h20v6H37z"/><path d="M28 14h8"/>'),
+    volumen: svg('<path d="M8 40h22v16H8zM34 40h22v16H34zM21 22h22v16H21z"/><path d="M27 22c0-5 10-5 10 0"/>'),
+    charla: svg('<path d="M10 14h44v28H30L20 52V42H10z"/><path d="M20 24h24M20 32h16"/>'),
+    plan: svg('<path d="M16 12h32v44H16z"/><path d="M25 8h14v8H25z"/><path d="M23 28h18M23 36h18M23 44h10"/>'),
+    hoja: svg('<path d="M32 56V26"/><path d="M32 30C24 18 12 18 8 26c10-2 18 0 24 4z"/><path d="M32 30c8-12 20-12 24-4-10-2-18 0-24 4z"/>'),
+    casa: svg('<path d="M10 30L32 12l22 18"/><path d="M16 26v28h32V26"/><path d="M24 54V44a8 8 0 0 1 16 0v10"/>'),
+    camion: svg('<path d="M6 18h32v26H6z"/><path d="M38 26h12l8 9v9H38z"/><circle cx="17" cy="47" r="5"/><circle cx="47" cy="47" r="5"/>'),
+    lupa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>'
+  };
+  function media(p) {
+    if (p.image) return '<img src="/_blob/' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy"' + (p.imageFit === 'cover' ? ' class="fill"' : '') + ' data-icon="' + esc(p.icon || 'kit') + '">';
+    return ICONS[p.icon] || ICONS.kit;
+  }
+  document.addEventListener('error', function (e) {
+    var t = e.target;
+    if (t && t.tagName === 'IMG' && t.dataset && t.dataset.icon) {
+      var holder = t.parentNode; if (holder) holder.innerHTML = ICONS[t.dataset.icon] || ICONS.kit;
+    }
+  }, true);
+
+  /* ---------- Precios y disponibilidad ---------- */
+  function unitPrice(p, qty, st) {
+    var base = Number(p.price) || 0;
+    var best = base;
+    (p.tiers || []).forEach(function (t) { if (qty >= t.min && t.price < best) best = t.price; });
+    return best;
+  }
+  function availOf(p, st) {
+    if (p.availability === 'stock' && st && p.stockStrains && p.stockStrains.length && p.stockStrains.indexOf(st) === -1) return 'pedido';
+    return p.availability;
+  }
+  var AVAIL = {
+    stock: { label: 'Entrega inmediata', cls: 'ok' },
+    pedido: { label: 'A pedido', cls: 'warn' },
+    digital: { label: 'Digital · llega por mail', cls: 'info' },
+    consulta: { label: 'Precio a convenir', cls: 'info' }
+  };
+  function badge(key, custom) {
+    var a = AVAIL[key] || AVAIL.stock;
+    return '<span class="badge ' + a.cls + '">' + esc(custom || a.label) + '</span>';
+  }
+  function cardBadge(p) {
+    if (p.availability === 'stock' && p.stockStrains && p.stockStrains.length && p.strains && p.stockStrains.length < p.strains.length) {
+      return badge('stock', p.stockStrains.map(strainName).join(', ') + ' inmediata · resto a pedido');
+    }
+    return badge(p.availability);
+  }
+  function priceHtml(p) {
+    if (p.price == null || p.price === '') return '<span class="price">Consultar</span>';
+    return '<span class="price">' + (p.priceFrom ? '<small>desde </small>' : '') + money(p.price) + '</span>';
+  }
+
+  /* ---------- Carrito ---------- */
+  function loadCart() { try { var v = JSON.parse(localStorage.getItem('mb-cart') || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
+  var cart = loadCart();
+  function saveCart() { try { localStorage.setItem('mb-cart', JSON.stringify(cart)); } catch (e) {} updateCount(); }
+  function updateCount() { var n = cart.reduce(function (a, l) { return a + l.qty; }, 0); $('#cart-count').textContent = n; }
+  function addToCart(id, st, qty) {
+    var key = id + '|' + (st || '');
+    var line = cart.find(function (l) { return l.key === key; });
+    if (line) line.qty += qty; else cart.push({ key: key, id: id, strain: st || null, qty: qty });
+    saveCart(); renderDrawer();
+    var p = product(id);
+    toast('Agregaste ' + qty + ' × ' + p.name + (st ? ' (' + strainName(st) + ')' : ''));
+  }
+  function cartLines() {
+    return cart.map(function (l) {
+      var p = product(l.id);
+      if (!p || p.visible === false || !canBuy(p)) return null;
+      var totalQty = cart.filter(function (x) { return x.id === l.id; }).reduce(function (a, x) { return a + x.qty; }, 0);
+      var u = unitPrice(p, totalQty, l.strain);
+      return { key: l.key, id: l.id, strain: l.strain, qty: l.qty, p: p, u: u, total: u * l.qty, avail: availOf(p, l.strain) };
+    }).filter(Boolean);
+  }
+  function totals(lines) {
+    var subtotal = lines.reduce(function (a, l) { return a + l.total; }, 0);
+    var hasPedido = lines.some(function (l) { return l.avail === 'pedido'; });
+    var allDigital = lines.length > 0 && lines.every(function (l) { return l.avail === 'digital'; });
+    return { subtotal: subtotal, hasPedido: hasPedido, allDigital: allDigital };
+  }
+  function lineHtml(l, editable) {
+    return '<li class="line"><span class="thumb">' + media(l.p) + '</span>' +
+      '<div class="line-info"><b>' + esc(l.p.name) + '</b>' +
+      '<small>' + (l.strain ? esc(strainName(l.strain)) + ' · ' : '') + money(l.u) + ' c/u' + (l.avail === 'pedido' ? ' · a pedido' : '') + '</small>' +
+      (editable ? '<span class="qty sm"><button type="button" data-cart="dec" data-key="' + esc(l.key) + '" aria-label="Restar uno">−</button><input type="number" min="1" value="' + l.qty + '" data-cart="set" data-key="' + esc(l.key) + '" aria-label="Cantidad"><button type="button" data-cart="inc" data-key="' + esc(l.key) + '" aria-label="Sumar uno">+</button></span>' : '<small>Cantidad: ' + l.qty + '</small>') +
+      '</div><div class="line-price">' + money(l.total) + (editable ? '<button class="rm" type="button" data-cart="rm" data-key="' + esc(l.key) + '">Quitar</button>' : '') + '</div></li>';
+  }
+  function totalsHtml(t) {
+    return '<div class="totals"><div class="grand"><span>Total a transferir</span><span>' + money(t.subtotal) + '</span></div>' +
+      '<p class="muted" style="font-size:13px">' + (t.allDigital ? 'Se envía por mail, sin costo de envío.' : 'Pago por transferencia. El envío se abona aparte, según cómo lo recibas.') + '</p></div>';
+  }
+  function renderDrawer() {
+    var body = $('#drawer-body');
+    var lines = cartLines();
+    if (!lines.length) {
+      body.innerHTML = '<div class="empty" style="margin-top:24px">' + ICONS.kit.replace('<svg', '<svg style="width:56px;color:var(--accent)"') + '<p>Tu carrito está vacío.</p><a class="btn small" href="#productos">Ver productos</a></div>';
+      return;
+    }
+    var t = totals(lines);
+    body.innerHTML = '<ul class="lines">' + lines.map(function (l) { return lineHtml(l, true); }).join('') + '</ul>' + totalsHtml(t) +
+      (t.hasPedido ? '<p class="note">Tu pedido incluye productos que se preparan a pedido. El tiempo de entrega depende de la disponibilidad y te lo confirmamos por WhatsApp.</p>' : '') +
+      '<div class="drawer-foot"><a class="btn" href="#checkout">Finalizar pedido</a><button class="btn ghost" type="button" id="keep-shopping">Seguir comprando</button></div>';
+  }
+  function changeLine(key, act, value) {
+    var l = cart.find(function (x) { return x.key === key; });
+    if (!l) return;
+    if (act === 'inc') l.qty++;
+    else if (act === 'dec') l.qty = Math.max(1, l.qty - 1);
+    else if (act === 'set') { var n = parseInt(value, 10); l.qty = n >= 1 ? Math.min(n, 999) : 1; }
+    else if (act === 'rm') cart = cart.filter(function (x) { return x.key !== key; });
+    saveCart(); renderDrawer();
+    if ((location.hash || '') === '#checkout' && !state.result) renderSummary();
+  }
+
+  var lastFocus = null;
+  function openDrawer() { lastFocus = document.activeElement; renderDrawer(); $('#drawer').hidden = false; $('#scrim').hidden = false; $('#cart-close').focus(); }
+  function closeDrawer(silent) {
+    if ($('#drawer').hidden) return;
+    $('#drawer').hidden = true; $('#scrim').hidden = true;
+    if (!silent && lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  /* ---------- Utilidades de interfaz ---------- */
+  var toastTimer;
+  function toast(msg) {
+    var t = $('#toast'); t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove('show'); }, 2600);
+  }
+  function waLink(text) {
+    var num = String(cat.settings.whatsapp || '').replace(/\D/g, '');
+    return 'https://wa.me/' + num + (text ? '?text=' + encodeURIComponent(text) : '');
+  }
+  function igLink() { return 'https://www.instagram.com/' + encodeURIComponent(cat.settings.instagram || 'miceliobrubar') + '/'; }
+  function closeMenu() { $('#main-nav').classList.remove('open'); $('#menu-btn').setAttribute('aria-expanded', 'false'); }
+  function renderChrome() {
+    var ann = (cat.settings.announcement || '').trim();
+    $('#announce').hidden = !ann; $('#announce-text').textContent = ann;
+    $('#wa-float').href = waLink('¡Hola! Tengo una consulta sobre sus productos.');
+    var c = '<li><a href="' + esc(waLink('¡Hola! Tengo una consulta.')) + '" target="_blank" rel="noopener">WhatsApp</a></li>' +
+      '<li><a href="' + esc(igLink()) + '" target="_blank" rel="noopener">Instagram @' + esc(cat.settings.instagram || 'miceliobrubar') + '</a></li>';
+    if (cat.settings.mercadolibre) c += '<li><a href="' + esc(cat.settings.mercadolibre) + '" target="_blank" rel="noopener">Mercado Libre</a></li>';
+    c += '<li><a href="#como-comprar">Envíos y pagos</a></li>';
+    if (state.isAdmin) c += '<li><a href="#admin">Administrar tienda</a></li>';
+    $('#foot-contact').innerHTML = c;
+    $('#admin-pill').hidden = !state.isAdmin;
+    $('#draft-bar').hidden = !(state.isAdmin && isDirty() && location.hash !== '#admin');
+  }
+
+  /* ---------- Vistas ---------- */
+  function cardHtml(p) {
+    var c = category(p.cat);
+    var action;
+    if (!canBuy(p)) action = '<a class="btn ghost small" href="' + esc(waLink('¡Hola! Quiero consultar por: ' + p.name)) + '" target="_blank" rel="noopener">Consultar por WhatsApp</a>';
+    else if (p.strains && p.strains.length) action = '<a class="btn ghost small" href="#p-' + esc(p.id) + '">Elegir cepa</a>';
+    else action = '<button class="btn small" type="button" data-add="' + esc(p.id) + '">Agregar al carrito</button>';
+    return '<article class="card"><a class="card-link" href="#p-' + esc(p.id) + '"><div class="media">' + media(p) + '</div>' +
+      '<div class="card-body"><span class="mono">' + esc(c ? c.name : '') + '</span><h3>' + esc(p.name) + '</h3><p>' + esc(p.short) + '</p></div></a>' +
+      '<div class="card-foot"><div class="price-row">' + priceHtml(p) + cardBadge(p) + '</div>' + action + '</div></article>';
+  }
+
+  function viewHome() {
+    var featured = visible().filter(function (p) { return p.featured; }).slice(0, 4);
+    var kit = product('kit');
+    var stepsHow = [
+      ['Armás tu pedido', 'Elegís productos y cepas, y los sumás al carrito.'],
+      ['Completás tus datos', 'Elegís cómo recibirlo: retiro, Uber Moto en AMBA o envío a todo el país.'],
+      ['Transferís el total', 'Te mostramos el alias y el monto exacto apenas completás tus datos.'],
+      ['Mandás el comprobante', 'Nos llega tu pedido por WhatsApp, confirmamos los tiempos y despachamos.']
+    ];
+    return '' +
+      '<section class="wrap hero">' +
+        '<div class="hero-copy">' +
+          '<p class="eyebrow">Laboratorio de micelio · Ciudadela, Buenos Aires</p>' +
+          '<h1>Insumos para cultivar hongos, del frasco a la cosecha</h1>' +
+          '<p class="lead">Kits, micelio en grano, jeringas, placas y sustratos producidos por un ingeniero agrónomo. Para tu primera cosecha en casa o para abastecer tu producción.</p>' +
+          '<div class="hero-cta"><a class="btn" href="#productos">Ver productos</a><a class="btn ghost" href="#p-kit">Empezar con un kit</a></div>' +
+          '<ul class="hero-facts"><li><b>' + cat.strains.length + ' cepas</b>de genética propia</li><li><b>Todo el país</b>Andreani y Vía Cargo</li><li><b>Reposición</b>si te llega contaminado</li></ul>' +
+        '</div>' +
+        '<figure class="spec" aria-label="Ficha de cultivo del kit">' +
+          '<div class="spec-top"><span class="mono">Ficha de cultivo</span><span class="mono">Kit de autocultivo</span></div>' +
+          '<h2><i>Pleurotus ostreatus</i></h2><p class="sub">Gírgola gris · ' + (kit && kit.price ? money(kit.price) : '') + '</p>' +
+          '<ol class="stages">' +
+            '<li><span class="n">01</span><div><b>Inoculación</b><small>La jeringa va al frasco de grano</small></div><span class="v">10 cc</span></li>' +
+            '<li><span class="n">02</span><div><b>Incubación</b><small>Oscuridad total, todo bien limpio</small></div><span class="v">20–23 °C</span></li>' +
+            '<li><span class="n">03</span><div><b>Colonización del sustrato</b><small>El grano pasa a los pellets</small></div><span class="v">20–23 °C</span></li>' +
+            '<li><span class="n">04</span><div><b>Fructificación</b><small>Luz indirecta, rociar 4 veces por día</small></div><span class="v">10–18 °C</span></li>' +
+            '<li><span class="n">05</span><div><b>Cosecha</b><small>En dos oleadas</small></div><span class="v">≈ 500 g</span></li>' +
+          '</ol>' +
+        '</figure>' +
+      '</section>' +
+      '<section class="wrap section" style="padding-top:16px"><div class="paths">' +
+        '<a class="path path-home" href="#cat-en-casa">' + ICONS.casa + '<span class="mono">Para particulares</span><h2>Cultivá en casa</h2><p>Kits con todo incluido, bloques listos para fructificar y un manual para aprender desde cero.</p><span class="go">Ver cultivo en casa →</span></a>' +
+        '<a class="path path-pro" href="#cat-productores">' + ICONS.volumen + '<span class="mono">Para productores</span><h2>Abastecé tu producción</h2><p>Micelio en grano, bloques de 4 kg con entrega semanal, pellets y genética en placa.</p><span class="go">Ver productos para productores →</span></a>' +
+      '</div></section>' +
+      (featured.length ? '<section class="wrap section" style="padding-top:8px"><div class="section-head"><div class="stack"><span class="eyebrow">Lo más pedido</span><h2>Para empezar</h2></div><a class="link" href="#productos">Ver todos los productos</a></div><div class="grid">' + featured.map(cardHtml).join('') + '</div></section>' : '') +
+      '<section class="wrap section"><div class="section-head"><div class="stack"><span class="eyebrow">Genética</span><h2>Nuestras cepas</h2></div><p class="muted">Disponibles en jeringa y en kit. En grano y en placa, consultá disponibilidad.</p></div>' +
+        '<ul class="strain-list">' + cat.strains.map(function (s) { return '<li><b>' + esc(s.name) + '</b><i>' + esc(s.latin) + '</i></li>'; }).join('') + '</ul></section>' +
+      '<section class="wrap section"><div class="section-head"><div class="stack"><span class="eyebrow">Cómo comprar</span><h2>Así hacés tu pedido</h2></div><a class="link" href="#como-comprar">Envíos y pagos</a></div>' +
+        '<ol class="steps">' + stepsHow.map(function (s, i) { return '<li><span class="mono">Paso ' + (i + 1) + '</span><b>' + s[0] + '</b><p>' + s[1] + '</p></li>'; }).join('') + '</ol></section>' +
+      '<section class="wrap section"><div class="band"><div class="stack"><span class="mono" style="color:var(--band-muted)">Garantía</span><h2>Si te llega con moho, te lo reponemos</h2></div>' +
+        '<div class="stack"><p>Si el producto llega contaminado por un problema en la siembra o en la pasteurización, nos avisás y te mandamos uno nuevo.</p><div><a class="btn" href="#preguntas">Ver preguntas frecuentes</a></div></div></div></section>';
+  }
+
+  function viewProducts(catId) {
+    var c = catId ? category(catId) : null;
+    if (catId && !c) return viewNotFound();
+    var list = visible();
+    var tabs = '<a class="tab' + (!catId ? ' active' : '') + '" href="#productos">Todos<small>' + list.length + '</small></a>' +
+      cat.categories.map(function (k) {
+        var n = list.filter(function (p) { return p.cat === k.id; }).length;
+        if (!n) return '';
+        return '<a class="tab' + (catId === k.id ? ' active' : '') + '" href="#cat-' + esc(k.id) + '">' + esc(k.name) + '<small>' + n + '</small></a>';
+      }).join('');
+    return '<section class="wrap"><div class="page-head"><span class="eyebrow">Tienda</span><h1>' + esc(c ? c.name : 'Productos') + '</h1>' +
+      (c ? '<p class="lead">' + esc(c.blurb) + '</p>' : '<p class="lead">Todo lo que producimos en el laboratorio, separado por etapa del cultivo.</p>') + '</div>' +
+      '<div class="toolbar"><nav class="tabs" aria-label="Categorías">' + tabs + '</nav>' +
+      '<label class="search"><span class="vh">Buscar productos</span>' + ICONS.lupa + '<input type="text" id="search" placeholder="Buscar: jeringa, melena, pellet…" value="' + esc(state.search) + '" autocomplete="off"></label></div>' +
+      '<div id="grid-wrap" style="padding-block:20px 56px"></div></section>';
+  }
+  function renderGrid(catId) {
+    var q = state.search.trim().toLowerCase();
+    var list = visible().filter(function (p) { return !catId || p.cat === catId; });
+    if (q) list = list.filter(function (p) {
+      var hay = [p.name, p.short, p.desc].concat((p.strains || []).map(function (s) { var x = strain(s); return x ? x.name + ' ' + x.latin : ''; })).join(' ').toLowerCase();
+      return hay.indexOf(q) !== -1;
+    });
+    var wrap = $('#grid-wrap');
+    if (!wrap) return;
+    if (!list.length) { wrap.innerHTML = '<div class="empty"><p>No encontramos productos con “' + esc(state.search) + '”.</p><a class="btn small ghost" href="' + esc(waLink('¡Hola! Estoy buscando: ' + state.search)) + '" target="_blank" rel="noopener">Preguntanos por WhatsApp</a></div>'; return; }
+    if (!catId && !q) {
+      wrap.innerHTML = cat.categories.map(function (k) {
+        var items = list.filter(function (p) { return p.cat === k.id; });
+        if (!items.length) return '';
+        return '<div style="margin-bottom:44px"><div class="section-head" style="margin-bottom:16px"><div class="stack" style="gap:4px"><h2 style="font-size:26px">' + esc(k.name) + '</h2><p class="muted">' + esc(k.blurb) + '</p></div><a class="link" href="#cat-' + esc(k.id) + '">Ver solo esta categoría</a></div><div class="grid">' + items.map(cardHtml).join('') + '</div></div>';
+      }).join('');
+    } else {
+      wrap.innerHTML = '<div class="grid">' + list.map(cardHtml).join('') + '</div>';
+    }
+  }
+
+  function viewProduct(id) {
+    var p = product(id);
+    if (!p || (p.visible === false && !state.isAdmin)) return viewNotFound();
+    var c = category(p.cat);
+    var defStrain = (p.stockStrains && p.stockStrains.length) ? p.stockStrains[0] : (p.strains && p.strains[0]);
+    var strainsHtml = '';
+    if (p.strains && p.strains.length) {
+      strainsHtml = '<fieldset><legend>Cepa</legend><div class="chips">' + p.strains.map(function (s) {
+        var later = availOf(p, s) === 'pedido';
+        return '<label class="chip"><input type="radio" name="strain" id="st-' + esc(s) + '" value="' + esc(s) + '"' + (s === defStrain ? ' checked' : '') + '>' +
+          (p.availability === 'stock' ? '<span class="dot' + (later ? ' later' : '') + '" aria-hidden="true"></span>' : '') + esc(strainName(s)) + '</label>';
+      }).join('') + '</div></fieldset>';
+    }
+    var tierHtml = (p.tiers && p.tiers.length) ? '<span class="tier">' + esc(p.priceNote || ('Llevando ' + p.tiers[0].min + ' o más: ' + money(p.tiers[0].price) + ' c/u')) + '</span>' : (p.priceNote ? '<span class="tier" style="color:var(--muted)">' + esc(p.priceNote) + '</span>' : '');
+    var buy;
+    if (canBuy(p)) {
+      buy = '<form id="buy" class="stack" style="gap:18px">' + strainsHtml +
+        '<div class="buy-row"><span class="qty"><button type="button" data-q="-1" aria-label="Restar uno">−</button><input type="number" id="qty" min="1" max="999" value="1" aria-label="Cantidad"><button type="button" data-q="1" aria-label="Sumar uno">+</button></span>' +
+        '<button class="btn" type="submit" style="flex:1 1 200px">Agregar al carrito</button></div><p class="muted" id="d-total" style="font-size:14px"></p></form>';
+    } else {
+      buy = '<div class="stack">' + (p.strains && p.strains.length ? '<p class="muted">Cepas: ' + p.strains.map(strainName).join(', ') + '.</p>' : '') +
+        '<div><a class="btn" href="' + esc(waLink('¡Hola! Quiero consultar por: ' + p.name)) + '" target="_blank" rel="noopener">Consultar por WhatsApp</a></div></div>';
+    }
+    var specs = (p.specs && p.specs.length) ? '<dl class="specs">' + p.specs.map(function (s) { return '<dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd>'; }).join('') + '</dl>' : '';
+    var note = '';
+    if (p.availability === 'pedido') note = '<p class="note">Se prepara a pedido. El tiempo de entrega depende de la disponibilidad y te lo confirmamos por WhatsApp.</p>';
+    else if (p.stockStrains && p.stockStrains.length && p.availability === 'stock') note = '<p class="note">Las cepas con punto verde tienen entrega inmediata. Las de punto ocre se preparan a pedido: el tiempo de entrega depende de la disponibilidad.</p>';
+    else if (p.availability === 'digital') note = '<p class="note">Producto digital: te lo enviamos por mail cuando se acredita el pago.</p>';
+    var related = visible().filter(function (x) { return x.cat === p.cat && x.id !== p.id; }).slice(0, 4);
+    return '<section class="wrap"><nav class="crumbs" aria-label="Ubicación"><a href="#productos">Productos</a><span>/</span><a href="#cat-' + esc(p.cat) + '">' + esc(c ? c.name : '') + '</a></nav>' +
+      '<div class="detail"><div class="media">' + media(p) + '</div>' +
+      '<div class="detail-info"><span class="mono">' + esc(c ? c.name : '') + (p.visible === false ? ' · oculto en la tienda' : '') + '</span><h1>' + esc(p.name) + '</h1>' +
+      '<div class="detail-price"><span id="d-price">' + priceHtml(p) + '</span><span id="d-avail">' + badge(availOf(p, defStrain)) + '</span></div>' + tierHtml +
+      '<p class="desc">' + esc(p.desc) + '</p>' + buy + note + specs + '</div></div>' +
+      (related.length ? '<div class="section" style="padding-top:0"><div class="section-head"><h2 style="font-size:26px">También en ' + esc(c ? c.name : 'la tienda') + '</h2></div><div class="grid">' + related.map(cardHtml).join('') + '</div></div>' : '') +
+      '</section>';
+  }
+  function bindProduct(id) {
+    var p = product(id), form = $('#buy');
+    if (!p || !form) return;
+    function current() {
+      var st = form.querySelector('input[name=strain]:checked');
+      var q = parseInt($('#qty').value, 10); if (!(q >= 1)) q = 1;
+      return { strain: st ? st.value : null, qty: Math.min(q, 999) };
+    }
+    function upd() {
+      var c = current();
+      var u = unitPrice(p, c.qty, c.strain);
+      $('#d-price').innerHTML = '<span class="price">' + money(u) + '</span>';
+      $('#d-avail').innerHTML = badge(availOf(p, c.strain));
+      $('#d-total').textContent = c.qty > 1 ? c.qty + ' unidades: ' + money(u * c.qty) : '';
+    }
+    form.addEventListener('change', upd);
+    form.addEventListener('input', upd);
+    form.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-q]'); if (!b) return;
+      var input = $('#qty'); var v = (parseInt(input.value, 10) || 1) + Number(b.dataset.q);
+      input.value = Math.max(1, Math.min(999, v)); upd();
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); var c = current(); addToCart(p.id, c.strain, c.qty);
+    });
+    upd();
+  }
+
+  function viewAbout() {
+    return '<section class="wrap"><div class="page-head"><span class="eyebrow">Quiénes somos</span><h1>Un laboratorio de micelio hecho por un agrónomo</h1></div>' +
+      '<div class="two section" style="padding-top:24px"><div class="prose">' +
+        '<p>Micelio Brubar nace de la investigación. Gonzalo, el fundador, es ingeniero agrónomo recibido en la Universidad de Morón y trabajó con <i>Pleurotus ostreatus</i> en su tesis en el INTECH (CONICET–UNSAM).</p>' +
+        '<p>Hoy producimos nuestro propio micelio en un laboratorio en Ciudadela, Buenos Aires: jeringas de micelio líquido, placas de Petri, micelio en grano y los kits de autocultivo. Usamos la misma genética en nuestra producción de gírgolas y melena de león, así que todo lo que vendemos lo probamos primero nosotros.</p>' +
+        '<p>Trabajamos con dos tipos de clientes. Quienes quieren aprender y cosechar en casa, y productores que necesitan insumos constantes para su producción. A los dos les explicamos el proceso sin vueltas.</p>' +
+        '<p>Trabajamos solo con especies comestibles y medicinales.</p>' +
+        '<div class="hero-cta"><a class="btn" href="#productos">Ver productos</a><a class="btn ghost" href="#cat-asesorias">Asesorías</a></div>' +
+      '</div>' +
+      '<aside class="lab-card"><span class="mono">El laboratorio</span><dl>' +
+        '<dt>Dónde</dt><dd>Ciudadela, Buenos Aires</dd>' +
+        '<dt>Qué hacemos</dt><dd>Micelio líquido, en grano y en placa, kits y bloques</dd>' +
+        '<dt>Cepas</dt><dd>' + cat.strains.map(function (s) { return esc(s.name); }).join(', ') + '</dd>' +
+        '<dt>Envíos</dt><dd>Retiro, Uber Moto en AMBA, Andreani y Vía Cargo</dd>' +
+      '</dl></aside></div>' +
+      '<div class="values" style="padding-bottom:56px">' +
+        '<div><b>Genética propia</b><p>Producimos y mantenemos nuestras cepas. Sabemos de dónde viene cada jeringa.</p></div>' +
+        '<div><b>Respaldo técnico</b><p>Detrás de cada producto hay un ingeniero agrónomo que te ayuda si algo no sale.</p></div>' +
+        '<div><b>Reposición</b><p>Si te llega contaminado por un problema nuestro, te mandamos uno nuevo.</p></div>' +
+      '</div></section>';
+  }
+
+  var SHIP = [
+    { id: 'retiro', name: 'Retiro en Ciudadela', note: 'Hasta las 14 h. Te pasamos la dirección al confirmar.', need: [] },
+    { id: 'uber', name: 'Uber Moto (AMBA)', note: 'Te damos un costo aproximado antes. El costo final se informa en la entrega.', need: ['direccion', 'localidad'] },
+    { id: 'andreani-dom', name: 'Andreani a domicilio', note: 'Te mandamos un link para pagar el envío.', need: ['dni', 'localidad', 'cp', 'direccion'] },
+    { id: 'andreani-suc', name: 'Andreani a sucursal', note: 'Te mandamos un link para pagar el envío.', need: ['dni', 'localidad', 'cp'] },
+    { id: 'viacargo', name: 'Vía Cargo', note: 'El envío se paga en destino, al retirar.', need: ['dni', 'localidad', 'cp'] }
+  ];
+
+  function viewHowTo() {
+    var s = cat.settings;
+    return '<section class="wrap"><div class="page-head"><span class="eyebrow">Envíos y pagos</span><h1>Cómo comprar</h1><p class="lead">Armás el carrito, completás tus datos, transferís el total y nos mandás el comprobante por WhatsApp. Sin registrarte.</p></div>' +
+      '<div class="section" style="padding-top:24px"><h2 style="font-size:26px;margin-bottom:18px">Formas de entrega</h2><ul class="ship-list">' +
+        SHIP.map(function (s) { return '<li><b>' + esc(s.name) + '</b><span>' + esc(s.note) + '</span></li>'; }).join('') +
+        '<li><b>Productos digitales</b><span>El manual llega por mail, sin costo de envío.</span></li></ul></div>' +
+      '<div class="two" style="padding-bottom:56px"><div class="prose">' +
+        '<h2 style="font-size:26px">Pagos</h2>' +
+        '<p>El pago es solo por transferencia, por el total del pedido. Cuando completás tus datos en la página, te mostramos el monto y los datos para transferir.</p>' +
+        (s.alias ? '<p class="note">Alias: <b>' + esc(s.alias) + '</b>' + (s.titular ? ' · A nombre de ' + esc(s.titular) : '') + (s.banco ? ' · ' + esc(s.banco) : '') + '</p>' : '') +
+        '<p>El envío se abona aparte: Andreani con un link que te mandamos, Vía Cargo en destino y Uber Moto al recibir.</p>' +
+        '<p>Para el envío, necesitamos nombre y apellido, DNI, mail, teléfono, localidad y código postal. Si es a domicilio, también la dirección.</p>' +
+        '<h2 style="font-size:26px;margin-top:12px">Tiempos de entrega</h2>' +
+        '<p>Dependen de la disponibilidad que tengamos y del tipo de producto. Lo que tiene entrega inmediata se despacha apenas confirmamos el pago. Las placas de Petri, el micelio en grano de cepas que no sean gírgola gris y los bloques de otras cepas se preparan a pedido; en esos casos te confirmamos el plazo por WhatsApp.</p>' +
+      '</div><aside class="lab-card"><span class="mono">Reposición</span><p>Si el producto llega con moho (por ejemplo <i>Trichoderma</i>) por un problema en la siembra o en la pasteurización, avisanos y te reponemos uno nuevo.</p><p class="muted" style="font-size:15px">Si llegó en buen estado y se contaminó después, por manipulación o condiciones del cultivo, no podemos reponerlo. Por eso te explicamos cada paso.</p></aside></div></section>';
+  }
+
+  function viewFaq() {
+    var qs = [
+      ['¿Cuánto rinde el kit de autocultivo?', 'Alrededor de 500 g de hongos frescos, en dos oleadas de cosecha.'],
+      ['¿Qué condiciones necesita el cultivo?', 'La incubación del grano y la colonización del sustrato van a 20–23 °C, en oscuridad total y con todo bien limpio (alcohol, manos y superficies). La fructificación va a 10–18 °C, con luz indirecta y rociando agua unas 4 veces por día.'],
+      ['¿Qué pasa si me llega con moho?', 'Si llega contaminado por un problema en la siembra o en la pasteurización, nos avisás y te reponemos uno nuevo. Si llegó bien y se contaminó después, no podemos hacernos cargo.'],
+      ['¿Qué significa “a pedido”?', 'Que lo preparamos especialmente para vos. El tiempo de entrega depende de la disponibilidad y del tipo de producto; te lo confirmamos por WhatsApp.'],
+      ['¿Hacen envíos al interior?', 'Sí. Enviamos a todo el país por Andreani (a domicilio o a sucursal) y por Vía Cargo. En AMBA también hacemos envíos por Uber Moto, y podés retirar en Ciudadela hasta las 14 h.'],
+      ['¿Cómo pago?', 'Solo por transferencia, por el total del pedido.' + (cat.settings.alias ? ' Alias: ' + cat.settings.alias + (cat.settings.titular ? ', a nombre de ' + cat.settings.titular : '') + '.' : '') + ' Después nos mandás el comprobante por WhatsApp.'],
+      ['¿Cuánto tarda en llegar?', 'Depende de la disponibilidad y del tipo de producto. Lo que está en stock se despacha apenas confirmamos el pago; lo que se prepara a pedido lleva más tiempo y te confirmamos el plazo por WhatsApp.'],
+      ['¿Venden a productores?', 'Sí. Para productores con una cantidad fija por semana o por mes tenemos precio por volumen en micelio en grano y bloques de 4 kg.'],
+      ['¿Cómo recibo el manual?', 'Por mail, apenas se acredita el pago.'],
+      ['¿Qué cepas tienen?', cat.strains.map(function (s) { return s.name; }).join(', ') + '.']
+    ];
+    return '<section class="wrap"><div class="page-head"><span class="eyebrow">Ayuda</span><h1>Preguntas frecuentes</h1></div>' +
+      '<div class="faq section" style="padding-top:24px">' + qs.map(function (q) { return '<details><summary>' + esc(q[0]) + '</summary><p>' + esc(q[1]) + '</p></details>'; }).join('') + '</div>' +
+      '<div style="padding-bottom:56px"><p class="lead" style="margin-bottom:14px">¿No encontraste tu respuesta?</p><a class="btn" href="' + esc(waLink('¡Hola! Tengo una consulta.')) + '" target="_blank" rel="noopener">Escribinos por WhatsApp</a></div></section>';
+  }
+
+  function viewNotFound() {
+    return '<section class="wrap section"><div class="empty"><h2>No encontramos esta página</h2><p>Puede que el producto ya no esté disponible.</p><a class="btn" href="#productos">Ver productos</a></div></section>';
+  }
+
+  /* ---------- Checkout ---------- */
+  var FIELDS = [
+    { id: 'nombre', label: 'Nombre y apellido', type: 'text', always: true, ac: 'name' },
+    { id: 'telefono', label: 'Teléfono', type: 'tel', always: true, ac: 'tel' },
+    { id: 'email', label: 'Mail', type: 'email', always: true, ac: 'email' },
+    { id: 'dni', label: 'DNI', type: 'text', ac: 'off' },
+    { id: 'localidad', label: 'Localidad', type: 'text', ac: 'address-level2' },
+    { id: 'cp', label: 'Código postal', type: 'text', ac: 'postal-code' },
+    { id: 'direccion', label: 'Dirección', type: 'text', full: true, ac: 'street-address' }
+  ];
+  function loadDatos() { try { return JSON.parse(localStorage.getItem('mb-datos') || '{}') || {}; } catch (e) { return {}; } }
+  function saveDatos(d) { try { localStorage.setItem('mb-datos', JSON.stringify(d)); } catch (e) {} }
+
+  function viewCheckout() {
+    if (state.result) return resultHtml(state.result);
+    var lines = cartLines();
+    if (!lines.length) return '<section class="wrap section"><div class="empty"><h2>Tu carrito está vacío</h2><p>Sumá productos para armar tu pedido.</p><a class="btn" href="#productos">Ver productos</a></div></section>';
+    var d = loadDatos();
+    var t = totals(lines);
+    var ship = d.envio && SHIP.some(function (s) { return s.id === d.envio; }) ? d.envio : 'andreani-dom';
+    var shipHtml = t.allDigital ? '<p class="note">Tu pedido es digital: te lo mandamos por mail.</p>' :
+      '<div class="ship-opts">' + SHIP.map(function (s) {
+        return '<label class="ship-opt"><input type="radio" name="envio" id="envio-' + s.id + '" value="' + s.id + '"' + (s.id === ship ? ' checked' : '') + '><b>' + esc(s.name) + '</b><span>' + esc(s.note) + '</span></label>';
+      }).join('') + '</div>';
+    var fields = FIELDS.map(function (f) {
+      return '<div class="field' + (f.full ? ' full' : '') + '" data-field="' + f.id + '"><label for="co-' + f.id + '">' + f.label + '</label>' +
+        '<input type="' + f.type + '" id="co-' + f.id + '" autocomplete="' + f.ac + '" value="' + esc(d[f.id] || '') + '"><span class="msg" hidden></span></div>';
+    }).join('');
+    return '<section class="wrap"><div class="page-head"><span class="eyebrow">Último paso</span><h1>Finalizar pedido</h1><p class="lead">Completá tus datos y te mostramos el alias para transferir el total.</p></div>' +
+      '<div class="co-grid"><form class="co-form" id="co-form" novalidate>' +
+        '<fieldset><legend style="font-size:20px;font-family:var(--f-display);font-weight:400">¿Cómo lo recibís?</legend>' + shipHtml + '</fieldset>' +
+        '<fieldset><legend style="font-size:20px;font-family:var(--f-display);font-weight:400">Tus datos</legend><div class="fields">' + fields + '</div></fieldset>' +
+        '<div class="field"><label for="co-notas">Notas <span class="hint">(opcional)</span></label><textarea id="co-notas" placeholder="Horario para recibir, preguntas, etc.">' + esc(d.notas || '') + '</textarea></div>' +
+        '<div><button class="btn" type="submit">Continuar al pago</button></div>' +
+      '</form><aside class="summary" id="co-summary"></aside></div></section>';
+  }
+  function renderSummary() {
+    var box = $('#co-summary'); if (!box) return;
+    var lines = cartLines(); var t = totals(lines);
+    box.innerHTML = '<h2>Tu pedido</h2><ul class="lines">' + lines.map(function (l) { return lineHtml(l, false); }).join('') + '</ul>' + totalsHtml(t) +
+      '<button class="btn ghost small" type="button" id="edit-cart">Editar carrito</button>';
+  }
+  function currentShip() { var r = document.querySelector('input[name=envio]:checked'); return r ? r.value : null; }
+  function neededFields() {
+    var lines = cartLines(); var t = totals(lines);
+    var base = ['nombre', 'telefono', 'email'];
+    if (t.allDigital) return base;
+    var s = SHIP.find(function (x) { return x.id === currentShip(); });
+    return base.concat(s ? s.need : []);
+  }
+  function syncFields() {
+    var need = neededFields();
+    $$('[data-field]').forEach(function (el) { el.hidden = need.indexOf(el.dataset.field) === -1; });
+  }
+  function bindCheckout() {
+    var form = $('#co-form'); if (!form) { bindResult(); return; }
+    renderSummary(); syncFields();
+    form.addEventListener('change', function (e) { if (e.target.name === 'envio') syncFields(); });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var need = neededFields(); var ok = true; var data = {}; var firstBad = null;
+      FIELDS.forEach(function (f) {
+        var el = $('#co-' + f.id); var wrap = el.closest('.field'); var msg = wrap.querySelector('.msg');
+        var v = el.value.trim(); data[f.id] = v;
+        var bad = '';
+        if (need.indexOf(f.id) !== -1) {
+          if (!v) bad = 'Completá este dato.';
+          else if (f.id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) bad = 'Revisá el mail: falta algo (por ejemplo, nombre@gmail.com).';
+        }
+        wrap.classList.toggle('err', !!bad); msg.hidden = !bad; msg.textContent = bad;
+        if (bad && !firstBad) firstBad = el;
+        if (bad) ok = false;
+      });
+      data.notas = $('#co-notas').value.trim();
+      data.envio = currentShip();
+      saveDatos(data);
+      if (!ok) { firstBad.focus(); return; }
+      var lines = cartLines(); var t = totals(lines);
+      state.result = { text: buildMessage(lines, t, data, need), total: t.subtotal, envio: t.allDigital ? 'digital' : data.envio, hasPedido: t.hasPedido };
+      view.innerHTML = resultHtml(state.result); bindResult(); window.scrollTo(0, 0);
+    });
+  }
+  function buildMessage(lines, t, d, need) {
+    var m = '¡Hola! Quiero hacer este pedido en Micelio Brubar:\n\n';
+    lines.forEach(function (l) {
+      m += '• ' + l.qty + ' × ' + l.p.name + (l.strain ? ' (' + strainName(l.strain) + ')' : '') + ' — ' + money(l.total) + (l.avail === 'pedido' ? ' [a pedido]' : '') + '\n';
+    });
+    m += '\nTotal transferido: ' + money(t.subtotal) + (cat.settings.alias ? ' (alias ' + cat.settings.alias + ')' : '') + '\nTe adjunto el comprobante.\n';
+    var s = SHIP.find(function (x) { return x.id === d.envio; });
+    m += '\nEntrega: ' + (t.allDigital ? 'por mail' : (s ? s.name : '')) + '\n';
+    var labels = { nombre: 'Nombre', telefono: 'Teléfono', email: 'Mail', dni: 'DNI', localidad: 'Localidad', cp: 'CP', direccion: 'Dirección' };
+    FIELDS.forEach(function (f) { if (need.indexOf(f.id) !== -1 && d[f.id]) m += labels[f.id] + ': ' + d[f.id] + '\n'; });
+    if (d.notas) m += '\nNotas: ' + d.notas + '\n';
+    return m;
+  }
+  var SHIP_PAY = {
+    'retiro': 'Retirás en Ciudadela hasta las 14 h. Te pasamos la dirección por WhatsApp.',
+    'uber': 'El Uber Moto se paga aparte: te damos un costo aproximado y el final se informa en la entrega.',
+    'andreani-dom': 'El envío por Andreani se paga aparte: te mandamos el link para pagarlo.',
+    'andreani-suc': 'El envío por Andreani se paga aparte: te mandamos el link para pagarlo.',
+    'viacargo': 'El envío por Vía Cargo se paga en destino, al retirar.',
+    'digital': 'Te mandamos el archivo por mail apenas confirmamos la transferencia.'
+  };
+  function resultHtml(r) {
+    var s = cat.settings;
+    var alias = (s.alias || '').trim();
+    var payBox = alias ?
+      '<div class="pay"><div class="pay-amount"><span class="mono">Monto a transferir</span><b>' + money(r.total) + '</b></div>' +
+        '<dl><dt>Alias</dt><dd><span class="alias" id="alias-text">' + esc(alias) + '</span><button class="btn ghost small" type="button" id="copy-alias">Copiar alias</button></dd>' +
+        (s.titular ? '<dt>Titular</dt><dd>' + esc(s.titular) + '</dd>' : '') +
+        (s.banco ? '<dt>Cuenta</dt><dd>' + esc(s.banco) + '</dd>' : '') +
+        '</dl></div>' :
+      '<div class="pay"><div class="pay-amount"><span class="mono">Monto a transferir</span><b>' + money(r.total) + '</b></div><p>Escribinos por WhatsApp y te pasamos los datos para transferir.</p></div>';
+    return '<section class="wrap"><div class="result"><span class="eyebrow">Último paso</span><h1 style="font-size:clamp(30px,4vw,42px)">Transferí y mandanos el comprobante</h1>' +
+      '<p class="step-title"><span>1</span>Transferí el total</p>' + payBox +
+      '<p class="muted">' + esc(SHIP_PAY[r.envio] || '') + (r.hasPedido ? ' Tu pedido incluye productos a pedido: el tiempo de entrega depende de la disponibilidad y te lo confirmamos por WhatsApp.' : ' El tiempo de entrega depende de la disponibilidad y del tipo de producto.') + '</p>' +
+      '<p class="step-title" style="margin-top:12px"><span>2</span>Mandanos el pedido con el comprobante</p>' +
+      '<p>Tocá el botón: se abre WhatsApp con tu pedido ya escrito. Adjuntá la captura del comprobante y envialo.</p>' +
+      '<div class="row"><a class="btn" href="' + esc(waLink(r.text)) + '" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a><button class="btn ghost" type="button" id="copy-msg">Copiar mensaje</button></div>' +
+      '<details><summary>Ver el mensaje del pedido</summary><pre id="msg-text">' + esc(r.text) + '</pre></details>' +
+      '<p class="muted">Si WhatsApp no se abre, copiá el mensaje y mandalo con el comprobante por Instagram a <a class="link" href="' + esc(igLink()) + '" target="_blank" rel="noopener">@' + esc(s.instagram || 'miceliobrubar') + '</a>.</p>' +
+      '<div class="row" style="border-top:1px solid var(--line);padding-top:16px"><button class="btn ghost small" type="button" id="done-order">Ya lo mandé, vaciar carrito</button><button class="btn ghost small" type="button" id="back-order">Volver y corregir datos</button></div>' +
+      '</div></section>';
+  }
+  function copyText(text, el, okMsg) {
+    var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Quedó seleccionado: copialo con Ctrl+C o mantené apretado'); };
+    try { navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback); } catch (e) { fallback(); }
+  }
+  function bindResult() {
+    var copy = $('#copy-msg'); if (!copy) return;
+    copy.addEventListener('click', function () {
+      var d = $('.result details'); if (d) d.open = true;
+      copyText(state.result ? state.result.text : '', $('#msg-text'), 'Mensaje copiado');
+    });
+    var ca = $('#copy-alias');
+    if (ca) ca.addEventListener('click', function () { copyText((cat.settings.alias || '').trim(), $('#alias-text'), 'Alias copiado'); });
+    $('#done-order').addEventListener('click', function () { cart = []; saveCart(); state.result = null; location.hash = '#inicio'; toast('¡Gracias! Te respondemos a la brevedad.'); });
+    $('#back-order').addEventListener('click', function () { state.result = null; route(); });
+  }
+
+  /* ---------- Administración ---------- */
+  function isDirty() { return JSON.stringify(cat) !== JSON.stringify(published); }
+  function setStatus(msg, cls) { var s = $('#adm-status'); if (s) { s.textContent = msg; s.className = 'status' + (cls ? ' ' + cls : ''); } }
+  function markDirty() {
+    if (isDirty()) setStatus('Tenés cambios sin publicar. La tienda ya los muestra solo en tu pantalla.', 'dirty');
+    else setStatus('Sin cambios. Lo que ves es lo que ven tus clientes.');
+    var pub = $('#adm-publish'); if (pub) pub.disabled = !isDirty();
+    var dis = $('#adm-discard'); if (dis) dis.disabled = !isDirty();
+    renderChrome(); updateCount();
+  }
+  function viewAdmin() {
+    if (!state.capsReady) return '<section class="wrap section"><div class="empty"><p>Verificando acceso…</p></div></section>';
+    if (!state.isAdmin) return '<section class="wrap section"><div class="empty"><h2>Sección para administrar la tienda</h2><p>Solo la puede usar el dueño de la tienda, abriéndola desde su cuenta de Claude.</p><a class="btn" href="#inicio">Volver al inicio</a></div></section>';
+    var tabs = [['productos', 'Productos'], ['categorias', 'Categorías'], ['ajustes', 'Ajustes']];
+    return '<section class="wrap"><div class="admin-head"><div class="stack" style="gap:6px"><span class="eyebrow">Solo vos ves esta sección</span><h1 style="font-size:clamp(28px,4vw,40px)">Administrar tienda</h1><p id="adm-status" class="status"></p></div>' +
+      '<div class="admin-actions"><button class="btn ghost small" type="button" id="adm-discard">Descartar cambios</button><button class="btn" type="button" id="adm-publish">Publicar cambios</button></div></div>' +
+      '<div class="adm-tabs" role="tablist">' + tabs.map(function (t) { return '<button class="tab' + (state.adminTab === t[0] ? ' active' : '') + '" type="button" role="tab" aria-selected="' + (state.adminTab === t[0]) + '" data-admtab="' + t[0] + '">' + t[1] + '</button>'; }).join('') + '</div>' +
+      '<div id="adm-panel"></div></section>';
+  }
+  function optionList(arr, val) { return arr.map(function (o) { return '<option value="' + esc(o[0]) + '"' + (o[0] === val ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join(''); }
+  var AV_OPTS = [['stock', 'Entrega inmediata'], ['pedido', 'A pedido'], ['digital', 'Digital (por mail)'], ['consulta', 'Solo consulta (sin carrito)']];
+  var ICON_OPTS = [['kit', 'Kit'], ['bloque', 'Bloque'], ['libro', 'Manual'], ['jeringa', 'Jeringa'], ['placa', 'Placa'], ['grano', 'Grano'], ['pellet', 'Bolsa de pellet'], ['frasco', 'Frasco'], ['frascos', 'Frascos'], ['volumen', 'Volumen'], ['charla', 'Consulta'], ['plan', 'Planificación'], ['hoja', 'Hoja']];
+  function specsText(p) { return (p.specs || []).map(function (s) { return s[0] + ': ' + s[1]; }).join('\n'); }
+  function tiersText(p) { return (p.tiers || []).map(function (t) { return t.min + ' = ' + t.price; }).join('\n'); }
+  function admProducts() {
+    var rows = cat.products.map(function (p) {
+      var open = state.openEditor === p.id;
+      var c = category(p.cat);
+      var row = '<div class="adm-row"><span class="thumb">' + media(p) + '</span>' +
+        '<div class="adm-name"><input type="text" id="n-' + esc(p.id) + '" data-f="name" value="' + esc(p.name) + '" aria-label="Nombre"><small>' + esc(c ? c.name : 'Sin categoría') + '</small></div>' +
+        '<label class="adm-price"><span class="vh">Precio</span><input type="number" min="0" step="100" id="pr-' + esc(p.id) + '" data-f="price" value="' + (p.price == null ? '' : esc(p.price)) + '" placeholder="Consultar"></label>' +
+        '<label class="adm-avail"><span class="vh">Disponibilidad</span><select id="av-' + esc(p.id) + '" data-f="availability">' + optionList(AV_OPTS, p.availability) + '</select></label>' +
+        '<label class="check"><input type="checkbox" id="vi-' + esc(p.id) + '" data-f="visible"' + (p.visible !== false ? ' checked' : '') + '> Visible</label>' +
+        '<button class="btn ghost small adm-edit" type="button" data-act="edit" aria-expanded="' + open + '">' + (open ? 'Cerrar' : 'Editar') + '</button></div>';
+      var detail = '';
+      if (open) {
+        var strainChecks = cat.strains.map(function (s) {
+          return '<label class="check"><input type="checkbox" data-f="strain" value="' + esc(s.id) + '" id="s-' + esc(p.id) + '-' + esc(s.id) + '"' + ((p.strains || []).indexOf(s.id) !== -1 ? ' checked' : '') + '> ' + esc(s.name) + '</label>';
+        }).join('');
+        var stockChecks = (p.strains || []).map(function (sid) {
+          return '<label class="check"><input type="checkbox" data-f="stockStrain" value="' + esc(sid) + '" id="ss-' + esc(p.id) + '-' + esc(sid) + '"' + ((p.stockStrains || []).indexOf(sid) !== -1 ? ' checked' : '') + '> ' + esc(strainName(sid)) + '</label>';
+        }).join('');
+        detail = '<div class="adm-detail">' +
+          '<div class="field full adm-photo"><span class="thumb">' + media(p) + '</span><div class="stack" style="gap:8px"><span class="muted" style="font-size:14px">Ícono o foto del producto (si no subís nada, se muestra el dibujo)</span><div class="row" style="display:flex;gap:8px;flex-wrap:wrap"><label class="btn small file-btn">Subir imagen<input type="file" accept="image/png,image/jpeg,image/webp" data-act="img" id="img-' + esc(p.id) + '"></label>' + (p.image ? '<button class="btn ghost small" type="button" data-act="noimg">Quitar imagen</button>' : '') + '</div>' + (p.image ? '<label class="check"><input type="checkbox" data-f="imageFit" id="fit-' + esc(p.id) + '"' + (p.imageFit === 'cover' ? ' checked' : '') + '> Es una foto: que llene todo el recuadro</label>' : '') + '</div></div>' +
+          '<div class="field"><label for="c-' + esc(p.id) + '">Categoría</label><select id="c-' + esc(p.id) + '" data-f="cat">' + optionList(cat.categories.map(function (k) { return [k.id, k.name]; }), p.cat) + '</select></div>' +
+          '<div class="field"><label for="i-' + esc(p.id) + '">Dibujo</label><select id="i-' + esc(p.id) + '" data-f="icon">' + optionList(ICON_OPTS, p.icon) + '</select></div>' +
+          '<div class="field full"><label for="sh-' + esc(p.id) + '">Descripción corta <span class="hint">(se ve en las tarjetas)</span></label><input type="text" id="sh-' + esc(p.id) + '" data-f="short" value="' + esc(p.short) + '"></div>' +
+          '<div class="field full"><label for="d-' + esc(p.id) + '">Descripción completa</label><textarea id="d-' + esc(p.id) + '" data-f="desc">' + esc(p.desc) + '</textarea></div>' +
+          '<div class="field"><label for="pn-' + esc(p.id) + '">Nota de precio <span class="hint">(ej.: 2 por $45.000)</span></label><input type="text" id="pn-' + esc(p.id) + '" data-f="priceNote" value="' + esc(p.priceNote || '') + '"></div>' +
+          '<div class="field"><label for="t-' + esc(p.id) + '">Precio por cantidad <span class="hint">(una línea por escala: cantidad = precio c/u)</span></label><textarea id="t-' + esc(p.id) + '" data-f="tiers" placeholder="2 = 22500">' + esc(tiersText(p)) + '</textarea></div>' +
+          '<div class="field full"><label for="sp-' + esc(p.id) + '">Ficha técnica <span class="hint">(una línea por dato: Etiqueta: valor)</span></label><textarea id="sp-' + esc(p.id) + '" data-f="specs" placeholder="Peso: 3 kg">' + esc(specsText(p)) + '</textarea></div>' +
+          '<div class="field full"><span style="font-size:14px;font-weight:600;color:var(--heading)">Cepas que ofrecés</span><div class="checks">' + strainChecks + '</div></div>' +
+          ((p.strains || []).length && p.availability === 'stock' ? '<div class="field full"><span style="font-size:14px;font-weight:600;color:var(--heading)">Cepas con entrega inmediata <span class="hint">(si no marcás ninguna, todas son inmediatas; las no marcadas pasan a pedido)</span></span><div class="checks">' + stockChecks + '</div></div>' : '') +
+          '<div class="field full adm-foot"><div style="display:flex;gap:16px;flex-wrap:wrap"><label class="check"><input type="checkbox" data-f="featured" id="f-' + esc(p.id) + '"' + (p.featured ? ' checked' : '') + '> Mostrar en el inicio</label><label class="check"><input type="checkbox" data-f="priceFrom" id="pf-' + esc(p.id) + '"' + (p.priceFrom ? ' checked' : '') + '> Mostrar “desde” en el precio</label></div>' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn ghost small" href="#p-' + esc(p.id) + '">Ver en la tienda</a><button class="btn ghost small danger" type="button" data-act="del">Eliminar producto</button></div></div>' +
+          '</div>';
+      }
+      return '<div class="adm-item' + (p.visible === false ? ' off' : '') + '" data-pid="' + esc(p.id) + '">' + row + detail + '</div>';
+    }).join('');
+    return '<div class="adm-list"><div class="adm-foot" style="margin-bottom:6px"><p class="muted" style="font-size:14px">Dejá el precio vacío para mostrar “Consultar”. Los productos no visibles no aparecen en la tienda.</p><button class="btn small" type="button" data-act="new">Agregar producto</button></div>' + rows + '</div>';
+  }
+  function admCategories() {
+    return '<div class="adm-list">' + cat.categories.map(function (k) {
+      return '<div class="adm-card" data-cid="' + esc(k.id) + '"><div class="field"><label for="cn-' + esc(k.id) + '">Nombre</label><input type="text" id="cn-' + esc(k.id) + '" data-f="name" value="' + esc(k.name) + '"></div>' +
+        '<div class="field"><label for="cb-' + esc(k.id) + '">Descripción</label><textarea id="cb-' + esc(k.id) + '" data-f="blurb">' + esc(k.blurb) + '</textarea></div></div>';
+    }).join('') + '</div>';
+  }
+  function admSettings() {
+    var s = cat.settings;
+    function f(id, label, hint, type) { return '<div class="field"><label for="set-' + id + '">' + label + (hint ? ' <span class="hint">(' + hint + ')</span>' : '') + '</label><input type="' + (type || 'text') + '" id="set-' + id + '" data-set="' + id + '" value="' + esc(s[id] || '') + '"></div>'; }
+    return '<div class="adm-list"><div class="adm-card" style="margin:0">' +
+      f('whatsapp', 'WhatsApp para pedidos', 'con código de país, sin espacios: 549…') +
+      f('instagram', 'Usuario de Instagram', 'sin @') +
+      f('alias', 'Alias para transferir', 'se muestra al cliente cuando completa sus datos') +
+      f('titular', 'Titular de la cuenta', 'nombre que ve el cliente al transferir') +
+      f('banco', 'Banco o billetera', 'ej.: Mercado Pago') +
+      f('mercadolibre', 'Link a tu tienda de Mercado Libre', 'opcional', 'url') +
+      '<div class="field" style="grid-column:1/-1"><label for="set-announcement">Aviso de la franja superior <span class="hint">(vacío = no se muestra)</span></label><input type="text" id="set-announcement" data-set="announcement" value="' + esc(s.announcement || '') + '"></div>' +
+      '</div></div>';
+  }
+  function renderAdminPanel() {
+    var panel = $('#adm-panel'); if (!panel) return;
+    panel.innerHTML = state.adminTab === 'categorias' ? admCategories() : state.adminTab === 'ajustes' ? admSettings() : admProducts();
+    markDirty();
+  }
+  function parseLines(text) { return String(text || '').split('\n').map(function (l) { return l.trim(); }).filter(Boolean); }
+  function setProductField(p, f, el) {
+    if (f === 'price') { p.price = el.value === '' ? null : Math.max(0, Number(el.value)); }
+    else if (f === 'visible') p.visible = el.checked;
+    else if (f === 'featured' || f === 'priceFrom') p[f] = el.checked;
+    else if (f === 'imageFit') { p.imageFit = el.checked ? 'cover' : 'contain'; return 'rerender'; }
+    else if (f === 'strain') {
+      p.strains = p.strains || [];
+      if (el.checked) { if (p.strains.indexOf(el.value) === -1) p.strains.push(el.value); }
+      else { p.strains = p.strains.filter(function (x) { return x !== el.value; }); p.stockStrains = (p.stockStrains || []).filter(function (x) { return x !== el.value; }); }
+      p.strains.sort(function (a, b) { return cat.strains.findIndex(function (s) { return s.id === a; }) - cat.strains.findIndex(function (s) { return s.id === b; }); });
+      return 'rerender';
+    }
+    else if (f === 'stockStrain') {
+      p.stockStrains = p.stockStrains || [];
+      if (el.checked) { if (p.stockStrains.indexOf(el.value) === -1) p.stockStrains.push(el.value); }
+      else p.stockStrains = p.stockStrains.filter(function (x) { return x !== el.value; });
+    }
+    else if (f === 'specs') { p.specs = parseLines(el.value).map(function (l) { var i = l.indexOf(':'); return i === -1 ? [l, ''] : [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }); }
+    else if (f === 'tiers') { p.tiers = parseLines(el.value).map(function (l) { var m = l.match(/(\d+)\D+([\d.]+)/); return m ? { min: Number(m[1]), price: Number(m[2].replace(/\./g, '')) } : null; }).filter(Boolean); }
+    else if (f === 'availability' || f === 'cat' || f === 'icon') { p[f] = el.value; return 'rerender'; }
+    else p[f] = el.value;
+  }
+  function bindAdmin() {
+    var root = $('.admin-head'); if (!root) return;
+    renderAdminPanel();
+    var panel = $('#adm-panel');
+    function onField(e) {
+      var el = e.target;
+      if (el.dataset.set) { cat.settings[el.dataset.set] = el.value.trim(); markDirty(); return; }
+      var f = el.dataset.f; if (!f) return;
+      var item = el.closest('[data-pid]');
+      if (item) {
+        var p = product(item.dataset.pid);
+        var r = setProductField(p, f, el);
+        if (f === 'visible') item.classList.toggle('off', !el.checked);
+        if (r === 'rerender' && e.type === 'change') renderAdminPanel(); else markDirty();
+        return;
+      }
+      var cItem = el.closest('[data-cid]');
+      if (cItem) { var k = category(cItem.dataset.cid); k[f] = el.value; markDirty(); }
+    }
+    panel.addEventListener('input', function (e) { if (e.target.type !== 'checkbox' && e.target.tagName !== 'SELECT' && e.target.type !== 'file') onField(e); });
+    panel.addEventListener('change', function (e) { if (e.target.type === 'file') return uploadPhoto(e.target); if (e.target.type === 'checkbox' || e.target.tagName === 'SELECT') onField(e); });
+    panel.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-act]'); if (!b || b.type === 'file') return;
+      var act = b.dataset.act;
+      var item = b.closest('[data-pid]');
+      if (act === 'edit') { state.openEditor = state.openEditor === item.dataset.pid ? null : item.dataset.pid; renderAdminPanel(); }
+      else if (act === 'new') {
+        var id = 'prod-' + Date.now().toString(36);
+        cat.products.unshift({ id: id, cat: cat.categories[0].id, name: 'Nuevo producto', short: '', desc: '', price: null, availability: 'stock', strains: [], stockStrains: [], specs: [], tiers: [], icon: 'kit', visible: false, featured: false });
+        state.openEditor = id; renderAdminPanel(); var n = $('#n-' + id); if (n) n.focus();
+      }
+      else if (act === 'noimg') { product(item.dataset.pid).image = null; renderAdminPanel(); }
+      else if (act === 'del') {
+        if (b.dataset.armed) { cat.products = cat.products.filter(function (p) { return p.id !== item.dataset.pid; }); cart = cart.filter(function (l) { return l.id !== item.dataset.pid; }); saveCart(); state.openEditor = null; renderAdminPanel(); toast('Producto eliminado. Publicá para que se vaya de la tienda.'); }
+        else { b.dataset.armed = '1'; b.textContent = 'Tocá de nuevo para eliminar'; setTimeout(function () { if (b.isConnected) { delete b.dataset.armed; b.textContent = 'Eliminar producto'; } }, 4000); }
+      }
+    });
+    $('.adm-tabs').addEventListener('click', function (e) {
+      var t = e.target.closest('[data-admtab]'); if (!t) return;
+      state.adminTab = t.dataset.admtab;
+      $$('[data-admtab]').forEach(function (x) { var on = x === t; x.classList.toggle('active', on); x.setAttribute('aria-selected', on); });
+      renderAdminPanel();
+    });
+    $('#adm-discard').addEventListener('click', function () { cat = clone(published); state.openEditor = null; renderAdminPanel(); toast('Cambios descartados'); });
+    $('#adm-publish').addEventListener('click', publishSite);
+  }
+  function uploadPhoto(input) {
+    var file = input.files && input.files[0]; if (!file) return;
+    var item = input.closest('[data-pid]'); var p = product(item.dataset.pid);
+    setStatus('Subiendo foto…');
+    use('assets').then(function (assets) {
+      if (!assets) { setStatus('Para subir fotos, abrí la tienda desde tu cuenta de Claude.', 'dirty'); return; }
+      var type = /png$/i.test(file.type) ? 'image/png' : /webp$/i.test(file.type) ? 'image/webp' : 'image/jpeg';
+      return assets.upload(file, { type: type }).then(function (res) {
+        p.image = res.id; renderAdminPanel(); toast('Foto cargada. Publicá para que la vean tus clientes.');
+      });
+    }).catch(function (err) {
+      var c = err && err.code;
+      var msg = c === 'too_large' ? 'La foto pesa más de 20 MB. Probá con una más liviana.' :
+        c === 'unsupported_type' ? 'Ese formato no se puede subir. Usá JPG, PNG o WEBP.' :
+        c === 'quota_or_state' ? 'No queda espacio para más fotos.' : 'No se pudo subir la foto. Probá de nuevo.';
+      setStatus(msg, 'dirty');
+    });
+  }
+  function use(name) {
+    try { return (window.claude && typeof window.claude.use === 'function') ? Promise.resolve(window.claude.use(name)).catch(function () { return null; }) : Promise.resolve(null); }
+    catch (e) { return Promise.resolve(null); }
+  }
+  var RESET = ':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+  function buildDocument() {
+    var S = 'scr' + 'ipt';
+    var json = JSON.stringify(cat).replace(/</g, '\\u003c');
+    return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + RESET + '</style></head><body>' +
+      '<meta name="claude:viewport-fit-sides" content="cover"><title>Micelio Brubar</title>' +
+      '<style id="app-style">' + $('#app-style').textContent + '</style>' +
+      $('#shell').outerHTML +
+      '<div id="root"></div>' +
+      '<' + S + ' type="application/json" id="catalog-data">' + json + '</' + S + '>' +
+      '<' + S + ' id="app-js">' + $('#app-js').textContent + '</' + S + '>' +
+      '</body></html>';
+  }
+  function publishSite() {
+    var btn = $('#adm-publish'); btn.disabled = true; btn.textContent = 'Publicando…';
+    use('artifact').then(function (art) {
+      if (!art) throw { code: 'not_granted' };
+      return art.publish(buildDocument());
+    }).then(function () {
+      setStatus('Publicado. La tienda se actualiza para todos.');
+    }).catch(function (err) {
+      var c = err && err.code;
+      if (c === 'conflict') setStatus('Se publicó otra versión recién. La página se recarga con esa versión.', 'dirty');
+      else if (['not_writer', 'not_granted', 'consent_required', 'not_declared', 'capability_disabled', 'capability_removed'].indexOf(c) !== -1) setStatus('Desde esta vista no se pueden guardar cambios. Abrí la tienda desde tu cuenta de Claude.', 'dirty');
+      else if (c === 'rate_limited') setStatus('Publicaste muchas veces seguidas. Esperá un minuto y probá de nuevo.', 'dirty');
+      else if (c === 'too_large') setStatus('La tienda quedó demasiado grande para publicarse. Quitá algún producto o texto largo.', 'dirty');
+      else setStatus('No se pudo publicar. Probá de nuevo en un momento.', 'dirty');
+      btn.disabled = false; btn.textContent = 'Publicar cambios';
+    });
+  }
+
+  /* ---------- Rutas ---------- */
+  function route() {
+    var h = (location.hash || '').slice(1) || 'inicio';
+    closeMenu(); closeDrawer(true);
+    var nav = h, after = null, html;
+    if (h !== 'checkout') state.result = null;
+    if (h === 'inicio') html = viewHome();
+    else if (h === 'productos') { html = viewProducts(null); after = function () { renderGrid(null); }; nav = 'productos'; }
+    else if (h.indexOf('cat-') === 0) { var cid = h.slice(4); html = viewProducts(cid); after = function () { renderGrid(cid); }; nav = 'productos'; }
+    else if (h.indexOf('p-') === 0) { var pid = h.slice(2); html = viewProduct(pid); after = function () { bindProduct(pid); }; nav = 'productos'; }
+    else if (h === 'nosotros') html = viewAbout();
+    else if (h === 'como-comprar') html = viewHowTo();
+    else if (h === 'preguntas') html = viewFaq();
+    else if (h === 'checkout') { html = viewCheckout(); after = bindCheckout; nav = ''; }
+    else if (h === 'admin') { html = viewAdmin(); after = bindAdmin; nav = ''; }
+    else html = viewNotFound();
+    view.innerHTML = html;
+    if (after) after();
+    $$('[data-nav]').forEach(function (a) { var on = a.dataset.nav === nav; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    renderChrome();
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Eventos globales ---------- */
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    var add = t.closest('[data-add]');
+    if (add) { e.preventDefault(); addToCart(add.dataset.add, null, 1); return; }
+    var c = t.closest('[data-cart]');
+    if (c && c.dataset.cart !== 'set') { changeLine(c.dataset.key, c.dataset.cart); return; }
+    if (t.closest('#cart-open')) { openDrawer(); return; }
+    if (t.closest('#cart-close') || t.closest('#keep-shopping') || t.id === 'scrim') { closeDrawer(); return; }
+    if (t.closest('#edit-cart')) { openDrawer(); return; }
+    if (t.closest('#menu-btn')) { var nav = $('#main-nav'); var open = !nav.classList.contains('open'); nav.classList.toggle('open', open); $('#menu-btn').setAttribute('aria-expanded', String(open)); return; }
+  });
+  document.addEventListener('change', function (e) { var el = e.target; if (el.dataset && el.dataset.cart === 'set') changeLine(el.dataset.key, 'set', el.value); });
+  document.addEventListener('input', function (e) {
+    if (e.target.id === 'search') { state.search = e.target.value; var h = (location.hash || '').slice(1); renderGrid(h.indexOf('cat-') === 0 ? h.slice(4) : null); }
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeDrawer(); closeMenu(); } });
+  window.addEventListener('hashchange', route);
+
+  updateCount();
+  route();
+
+  use('user').then(function (u) {
+    if (!u) return false;
+    return Promise.all([u.isOwner(), u.canEdit()]).then(function (r) { return !!(r[0] || r[1]); });
+  }).catch(function () { return false; }).then(function (owner) {
+    state.isAdmin = !!owner; state.capsReady = true;
+    if ((location.hash || '') === '#admin') route(); else renderChrome();
+  });
+})();
+</script>
+</body>
+</html>
