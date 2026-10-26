@@ -423,7 +423,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
 </template>
 <div id="root"></div>
 
-<script type="application/json" id="catalog-data">{"settings":{"whatsapp":"5491150119652","instagram":"miceliobrubar","alias":"miceliobrubar","titular":"Gonzalo Agustín Bruno","banco":"Mercado Pago","mercadolibre":"","announcement":"Envíos a todo el país · Retiro en Ciudadela hasta las 14 h"},
+<script type="application/json" id="catalog-data">{"settings":{"whatsapp":"5491150119652","instagram":"miceliobrubar","alias":"miceliobrubar","titular":"Gonzalo Agustín Bruno","banco":"Mercado Pago","notifyEmail":"gonzaloabruno@gmail.com","mercadolibre":"","announcement":"Envíos a todo el país · Retiro en Ciudadela hasta las 14 h"},
 "strains":[
 {"id":"girgola-gris","name":"Gírgola gris","latin":"Pleurotus ostreatus"},
 {"id":"melena","name":"Melena de león","latin":"Hericium erinaceus"},
@@ -947,12 +947,44 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
       saveDatos(data);
       if (!ok) { firstBad.focus(); return; }
       var lines = cartLines(); var t = totals(lines);
-      state.result = { text: buildMessage(lines, t, data, need), total: t.subtotal, envio: t.allDigital ? 'digital' : data.envio, hasPedido: t.hasPedido };
+      var orderId = 'MB-' + Date.now().toString(36).slice(-5).toUpperCase();
+      state.result = { id: orderId, text: buildMessage(lines, t, data, need, orderId), total: t.subtotal, envio: t.allDigital ? 'digital' : data.envio, hasPedido: t.hasPedido };
+      notifyOrder(orderId, lines, t, data, need);
       view.innerHTML = resultHtml(state.result); bindResult(); window.scrollTo(0, 0);
     });
   }
-  function buildMessage(lines, t, d, need) {
-    var m = '¡Hola! Quiero hacer este pedido en Micelio Brubar:\n\n';
+  function notifyOrder(id, lines, t, d, need) {
+    var to = String(cat.settings.notifyEmail || '').trim();
+    if (!to || !window.fetch) return;
+    var s = SHIP.find(function (x) { return x.id === d.envio; });
+    var body = {
+      _subject: 'Nuevo pedido ' + id + ' · ' + money(t.subtotal) + ' · ' + (d.nombre || ''),
+      _template: 'table',
+      _captcha: 'false',
+      'Pedido': id,
+      'Total a transferir': money(t.subtotal),
+      'Productos': lines.map(function (l) { return l.qty + ' x ' + l.p.name + (l.strain ? ' (' + strainName(l.strain) + ')' : '') + ' = ' + money(l.total) + (l.avail === 'pedido' ? ' [a pedido]' : ''); }).join(' | '),
+      'Entrega': t.allDigital ? 'Por mail (digital)' : (s ? s.name : ''),
+      'Nombre': d.nombre || '', 'Teléfono': d.telefono || '', 'Mail': d.email || ''
+    };
+    if (need.indexOf('dni') !== -1) body['DNI'] = d.dni || '';
+    if (need.indexOf('localidad') !== -1) body['Localidad'] = d.localidad || '';
+    if (need.indexOf('cp') !== -1) body['Código postal'] = d.cp || '';
+    if (need.indexOf('direccion') !== -1) body['Dirección'] = d.direccion || '';
+    if (d.notas) body['Notas'] = d.notas;
+    if (d.email) body._replyto = d.email;
+    var wa = String(d.telefono || '').replace(/\D/g, '');
+    if (wa) body['WhatsApp del cliente'] = 'https://wa.me/' + (wa.indexOf('54') === 0 ? wa : '549' + wa);
+    try {
+      fetch('https://formsubmit.co/ajax/' + encodeURIComponent(to), {
+        method: 'POST', keepalive: true,
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(body)
+      }).catch(function () {});
+    } catch (e) {}
+  }
+  function buildMessage(lines, t, d, need, id) {
+    var m = '¡Hola! Quiero hacer este pedido en Micelio Brubar' + (id ? ' (' + id + ')' : '') + ':\n\n';
     lines.forEach(function (l) {
       m += '• ' + l.qty + ' × ' + l.p.name + (l.strain ? ' (' + strainName(l.strain) + ')' : '') + ' — ' + money(l.total) + (l.avail === 'pedido' ? ' [a pedido]' : '') + '\n';
     });
@@ -982,7 +1014,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
         (s.banco ? '<dt>Cuenta</dt><dd>' + esc(s.banco) + '</dd>' : '') +
         '</dl></div>' :
       '<div class="pay"><div class="pay-amount"><span class="mono">Monto a transferir</span><b>' + money(r.total) + '</b></div><p>Escribinos por WhatsApp y te pasamos los datos para transferir.</p></div>';
-    return '<section class="wrap"><div class="result"><span class="eyebrow">Último paso</span><h1 style="font-size:clamp(30px,4vw,42px)">Transferí y mandanos el comprobante</h1>' +
+    return '<section class="wrap"><div class="result"><span class="eyebrow">Pedido ' + esc(r.id || '') + '</span><h1 style="font-size:clamp(30px,4vw,42px)">Transferí y mandanos el comprobante</h1>' +
       '<p class="step-title"><span>1</span>Transferí el total</p>' + payBox +
       '<p class="muted">' + esc(SHIP_PAY[r.envio] || '') + (r.hasPedido ? ' Tu pedido incluye productos a pedido: el tiempo de entrega depende de la disponibilidad y te lo confirmamos por WhatsApp.' : ' El tiempo de entrega depende de la disponibilidad y del tipo de producto.') + '</p>' +
       '<p class="step-title" style="margin-top:12px"><span>2</span>Mandanos el pedido con el comprobante</p>' +
@@ -1085,6 +1117,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
       f('alias', 'Alias para transferir', 'se muestra al cliente cuando completa sus datos') +
       f('titular', 'Titular de la cuenta', 'nombre que ve el cliente al transferir') +
       f('banco', 'Banco o billetera', 'ej.: Mercado Pago') +
+      f('notifyEmail', 'Mail para avisos de pedidos', 'te llega un mail por cada pedido') +
       f('mercadolibre', 'Link a tu tienda de Mercado Libre', 'opcional', 'url') +
       '<div class="field" style="grid-column:1/-1"><label for="set-announcement">Aviso de la franja superior <span class="hint">(vacío = no se muestra)</span></label><input type="text" id="set-announcement" data-set="announcement" value="' + esc(s.announcement || '') + '"></div>' +
       '</div></div>';
