@@ -964,11 +964,12 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
     var wa = String(d.telefono || '').replace(/\D/g, '');
     if (wa) body['WhatsApp del cliente'] = 'https://wa.me/' + (wa.indexOf('54') === 0 ? wa : '549' + wa);
     try {
-      fetch('https://formsubmit.co/ajax/' + encodeURIComponent(to), {
-        method: 'POST', keepalive: true,
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(body)
-      }).catch(function () {});
+      var fd = new FormData();
+      Object.keys(body).forEach(function (k) { fd.append(k, body[k]); });
+      fetch('https://formsubmit.co/ajax/' + to, { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd })
+        .then(function (r) { return r.json(); })
+        .then(function (j) { if (window.console) console.log('[aviso pedido]', j); })
+        .catch(function (err) { if (window.console) console.warn('[aviso pedido] no se pudo enviar', err); });
     } catch (e) {}
   }
   function buildMessage(lines, t, d, need, id) {
